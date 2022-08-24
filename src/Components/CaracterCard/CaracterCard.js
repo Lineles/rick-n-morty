@@ -9,7 +9,7 @@ function CaracterCard ({results}) {
                 let {id, name, gender, image, species, status} = x; 
                 return(
 
-                <div key={id} className="card-div col-4">
+                <div key={id} className="card-div">
                     <h1 className="card-name">{name}</h1> 
                     <img src={image} alt={name} className="card-img"/>
                     <p className="card-gender">{gender}</p>
