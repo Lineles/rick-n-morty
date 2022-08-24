@@ -1,28 +1,29 @@
 import React from "react";
-import Caracter from "../Caracter/Caracter";
-import axios from "axios";
+import { useEffect, useState } from 'react';
+import CaracterCard from "../CaracterCard/CaracterCard";
 
 export default function Homepage () {
-    const [caracters, setCaracter] = React.useState([]);
 
-    const fetchCaracter = () => {
-        axios.get('https://rickandmortyapi.com/api/character')
-        .then(response => setCaracter(response.data))
-    };
+  let [page, setpage] = useState(1);
+  let [caracters, fetchedCaracters] = useState([]);
+  let {info, results} = caracters;
+  let api = `https://rickandmortyapi.com/api/character/?page=${page}`;
 
-    return(
+  useEffect(() => {
+    (async function () {
+      let data = await fetch(api).then((res) => res.json()); 
+      fetchedCaracters(data);
+    })(); 
+  }, [api]);
 
-        <div> 
-            <button onClick={fetchCaracter} >render Caracters</button>
-            {caracters.map(
-                function(caracters) {
-                    return <Caracter 
-                    name={caracters.name}
-                    image={caracters.image} />    
-                }
-            )}
+
+    return (
+        <div>
+           <CaracterCard results={results} />
+          
         </div>
+      );
 
-    )
+
 
 }
