@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from 'react';
 import CaracterCard from "../CaracterCard/CaracterCard";
+import Header from "../Header/Header";
 
 export default function Homepage () {
 
@@ -19,6 +20,7 @@ export default function Homepage () {
 
     return (
         <div>
+           <Header /> 
            <CaracterCard results={results} />
           
         </div>
