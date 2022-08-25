@@ -1,0 +1,58 @@
+:root {
+    --purplecolor: #3C1642;
+    --bluecolor: #086375;
+    --lightbluecolor: #1DD3B0;
+    --greencolor: #AFFC41;
+    --lightgreencolor: #B2FF9E; 
+    --graycolor: #d3d3d3;
+  }
+
+.header-div{
+    height: 150px;
+    /* border: solid; */
+    background: var(--graycolor);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-h1{
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 72px;
+    font-weight: 100;
+    padding: 0px;
+    margin: 0px;
+    text-shadow: 0 0 var(--greencolor);
+    position: relative;
+    top: -24px;
+}
+
+.header-h3{
+    font-family: 'Rubik Distressed', cursive;
+    font-size: 44px;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: 13px;
+    left: -278px;
+    transform: rotate(-17deg);
+    font-weight: 100;
+    color: var(--lightbluecolor);
+    text-shadow: 0 0 var(--purplecolor);
+    z-index: 1;
+}
+
+.header-h3-2{
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 32px;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: -44px;
+    font-weight: 100;
+    color: darkmagenta;
+    text-shadow: 0 0 var(--bluecolor);
+}
+
