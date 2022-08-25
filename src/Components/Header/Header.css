@@ -1,6 +1,16 @@
-.header-div{
-    width: 300px;
+:root {
+    --purplecolor: #3C1642;
+    --bluecolor: #086375;
+    --lightbluecolor: #1DD3B0;
+    --greencolor: #AFFC41;
+    --lightgreencolor: #B2FF9E; 
+    --graycolor: #d3d3d3;
+  }
 
+.header-div{
+    height: 150px;
+    /* border: solid; */
+    background: var(--graycolor);
 }
 
 
@@ -10,21 +20,24 @@
     font-weight: 100;
     padding: 0px;
     margin: 0px;
-    text-shadow: 0 0 #10c70d;
+    text-shadow: 0 0 var(--greencolor);
+    position: relative;
+    top: -24px;
 }
 
 .header-h3{
-    font-family: 'Rubik Glitch', cursive;
-    font-size: 40px;
+    font-family: 'Rubik Distressed', cursive;
+    font-size: 44px;
     padding: 0px;
     margin: 0px;
     position: relative;
-    top: 34px;
-    left: -280px;
-    transform: rotate(-25deg);
+    top: 13px;
+    left: -278px;
+    transform: rotate(-17deg);
     font-weight: 100;
-    color: #09e32eeb;
-    text-shadow: 0 0 black;
+    color: var(--lightbluecolor);
+    text-shadow: 0 0 var(--purplecolor);
+    z-index: 1;
 }
 
 .header-h3-2{
@@ -33,9 +46,9 @@
     padding: 0px;
     margin: 0px;
     position: relative;
-    top: -19px;
+    top: -44px;
     font-weight: 100;
     color: darkmagenta;
-    text-shadow: 0 0 black;
+    text-shadow: 0 0 var(--bluecolor);
 }
 
