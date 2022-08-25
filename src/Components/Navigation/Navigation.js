@@ -8,10 +8,10 @@ function Navigation () {
                 <div>
 
                 </div>
-                <div>
+                <form>
                     <input type="text" placeholder="Search for Caracter" /> 
                     <button> </button>
-                </div>
+                </form>
                 <div>
 
                 </div>
