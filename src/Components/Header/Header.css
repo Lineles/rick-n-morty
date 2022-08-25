@@ -6,9 +6,11 @@
 
 .header-h1{
     font-family: 'Rubik Moonrocks', cursive;
-    font-size: 56px;
+    font-size: 72px;
+    font-weight: 100;
     padding: 0px;
     margin: 0px;
+    text-shadow: 0 0 #10c70d;
 }
 
 .header-h3{
@@ -18,17 +20,22 @@
     margin: 0px;
     position: relative;
     top: 34px;
-    left: -225px;
+    left: -280px;
     transform: rotate(-25deg);
     font-weight: 100;
-    color: lightseagreen;
+    color: #09e32eeb;
     text-shadow: 0 0 black;
 }
 
 .header-h3-2{
     font-family: 'Rubik Wet Paint', cursive;
-    font-size: 40px;
+    font-size: 32px;
     padding: 0px;
     margin: 0px;
+    position: relative;
+    top: -19px;
+    font-weight: 100;
+    color: darkmagenta;
+    text-shadow: 0 0 black;
 }
 

@@ -5,7 +5,7 @@ function Header (){
         <div>
             <h3 className="header-h3"> The </h3>
             <h1 className="header-h1"> Rick and Morty </h1>
-            <h3 className="header-h3-2"> Caracter Incyclopaedia</h3>
+            <h3 className="header-h3-2"> Character Encyclopaedia</h3>
         </div>
 ); 
 }
