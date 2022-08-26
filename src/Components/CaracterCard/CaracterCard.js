@@ -10,11 +10,11 @@ function CaracterCard ({results}) {
                 return(
 
                 <div key={id} className="card-div">
-                    <h1 className="card-name">{name}</h1> 
                     <img src={image} alt={name} className="card-img"/>
-                    <p className="card-gender">{gender}</p>
-                    <p className="card-species">{species} </p>
-                    <p className="card-status">{status}</p>
+                    <h1 className="card-name">{name}</h1> 
+                    {/* <p className="card-gender">{gender}</p> */}
+                    {/* <p className="card-species">{species} </p> */}
+                    {/* <p className="card-status">{status}</p> */}
                 </div>
                 ); 
 
