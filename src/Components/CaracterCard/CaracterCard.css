@@ -28,12 +28,12 @@
 }
 
 .card-img{
-    border: solid 2px var(--purplecolor);
+    border: solid 2px var(--bluecolor);
     border-radius: 150px;
 }
 
 .card-name{
-    border: solid 2px var(--purplecolor);
+    border: solid 2px var(--bluecolor);
     text-align: center;
     position: relative;
     top: -49px;
