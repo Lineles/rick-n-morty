@@ -23,7 +23,7 @@ function CaracterCard ({results}) {
         }else { 
             display = "No Caracter";
         };
-        return <>{display}</>
+        return <div className="main-flex"> {display}</div>
 }
 
 export default CaracterCard; 

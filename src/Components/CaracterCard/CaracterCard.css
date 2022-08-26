@@ -1,3 +1,11 @@
+.main-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .card-div{
     border: solid 1px black;
     border-radius: 10px;
