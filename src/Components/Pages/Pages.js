@@ -6,6 +6,7 @@ function Pages ({setpage, page}) {
             setpage((x) => x+1)
         };
 
+
         let last = () => {
             if(page === 1) return;
             setpage((x) => x-1)
