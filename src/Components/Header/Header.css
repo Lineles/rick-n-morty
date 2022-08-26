@@ -10,11 +10,11 @@
 .header-div{
     height: 150px;
     /* border: solid; */
-    background: var(--graycolor);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: var(--lightgreencolor);
 }
 
 

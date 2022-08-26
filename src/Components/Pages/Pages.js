@@ -1,13 +1,13 @@
-import "./Pages.css"
 
 function Pages ({setpage, page}) {
 
-        const next = () => {
+        let next = () => {
             if(page === 42) return;
             setpage((x) => x+1)
         };
 
-        const last = () => {
+
+        let last = () => {
             if(page === 1) return;
             setpage((x) => x-1)
         };

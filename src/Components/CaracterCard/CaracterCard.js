@@ -6,15 +6,12 @@ function CaracterCard ({results}) {
 
         if (results) {
             display = results.map((x) => {
-                let {id, name, gender, image, species, status} = x; 
+                let {id, name, image} = x; 
                 return(
 
-                <div key={id} className="card-div">
-                    <h1 className="card-name">{name}</h1> 
-                    <img src={image} alt={name} className="card-img"/>
-                    <p className="card-gender">{gender}</p>
-                    <p className="card-species">{species} </p>
-                    <p className="card-status">{status}</p>
+                <div key={id} className="card-div effect">
+                    <img src={image} alt={name} className="card-img effect10"/>
+                    <h1 className="card-name effect1">{name}</h1> 
                 </div>
                 ); 
 
@@ -23,7 +20,7 @@ function CaracterCard ({results}) {
         }else { 
             display = "No Caracter";
         };
-        return <>{display}</>
+        return <div className="main-flex"> {display}</div>
 }
 
 export default CaracterCard; 
