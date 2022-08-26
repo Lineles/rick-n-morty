@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import CaracterCard from "../CaracterCard/CaracterCard";
 import Header from "../Header/Header";
 import Pages from "../Pages/Pages";
+import Navigation from "../Navigation/Navigation";
 
 export default function Homepage () {
 
@@ -21,7 +22,8 @@ export default function Homepage () {
 
     return (
         <div>
-          <Header />   
+          <Header /> 
+          <Navigation />  
           <CaracterCard results={results} />
           <Pages setpage={setpage} page={page} /> 
         </div>
