@@ -6,15 +6,12 @@ function CaracterCard ({results}) {
 
         if (results) {
             display = results.map((x) => {
-                let {id, name, gender, image, species, status} = x; 
+                let {id, name, image} = x; 
                 return(
 
                 <div key={id} className="card-div">
-                    <img src={image} alt={name} className="card-img"/>
+                    <img src={image} alt={name} className="card-img effect10"/>
                     <h1 className="card-name">{name}</h1> 
-                    {/* <p className="card-gender">{gender}</p> */}
-                    {/* <p className="card-species">{species} </p> */}
-                    {/* <p className="card-status">{status}</p> */}
                 </div>
                 ); 
 
