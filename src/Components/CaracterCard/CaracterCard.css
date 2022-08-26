@@ -13,7 +13,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 56px;
     margin-top: 30px;
     margin-bottom: 60px;
     margin-left: 80px;
@@ -24,6 +24,7 @@
 .card-div{
     width: 300px;
     height: 350px;
+    font-family: 'Rubik Wet Paint', cursive;
 }
 
 .card-img{
@@ -40,10 +41,12 @@
     background-color: var(--lightgreencolor);
     margin: 0px;
     border-radius: 50px;
+    font-weight: 100;
+    padding: 6px;
 }
 
 .effect10:hover{
-    box-shadow: 0 1.9rem 3.8rem var(--purplecolor), 0 5.5rem 5.2rem var(--lightbluecolor);
+    box-shadow: 0 1.9rem 3.8rem var(--greencolor), 0 5.5rem 5.2rem var(--lightbluecolor);
     animation: effect10-in 500ms forwards;
     border: solid 4px var(--greencolor);
 }
@@ -58,4 +61,9 @@
   0%   {transform: translate(0, -15px) rotate(10deg);}
   50%   {transform: translate(0, -15px);}
   100%   {transform: translate(0, 0);}
+}
+
+.effect:hover{
+    font-family: 'Rubik Glitch', cursive;
+    /* color: var(--bluecolor); */
 }

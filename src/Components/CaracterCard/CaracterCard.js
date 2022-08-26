@@ -9,9 +9,9 @@ function CaracterCard ({results}) {
                 let {id, name, image} = x; 
                 return(
 
-                <div key={id} className="card-div">
+                <div key={id} className="card-div effect">
                     <img src={image} alt={name} className="card-img effect10"/>
-                    <h1 className="card-name">{name}</h1> 
+                    <h1 className="card-name effect1">{name}</h1> 
                 </div>
                 ); 
 
