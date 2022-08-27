@@ -1,6 +1,7 @@
 import "./Navigation.css"
+import Pages from "../Pages/Pages";
 
-function Navigation () {
+function Navigation ({setpage, page}) {
 
         return (
 
@@ -9,11 +10,11 @@ function Navigation () {
 
                 </div>
                 <form>
-                    <input type="text" placeholder="Search for Caracter" /> 
-                    <button> </button>
+                    <input type="text" placeholder="Search for Caracter" className="nav-input"/> 
+                    <button className="input-submit"> Find </button>
                 </form>
                 <div>
-
+                    <Pages setpage={setpage} page={page}/>
                 </div>
             </nav>
         );

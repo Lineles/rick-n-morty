@@ -23,7 +23,7 @@ export default function Homepage () {
     return (
         <div>
           <Header /> 
-          <Navigation />  
+          <Navigation setpage={setpage} page={page}/>  
           <CaracterCard results={results} />
           <Pages setpage={setpage} page={page} /> 
         </div>
