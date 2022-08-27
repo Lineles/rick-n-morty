@@ -25,6 +25,8 @@
     width: 300px;
     height: 350px;
     font-family: 'Rubik Wet Paint', cursive;
+    text-decoration: none;
+    color: black;
 }
 
 .card-img{

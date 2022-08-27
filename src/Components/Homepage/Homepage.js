@@ -9,6 +9,9 @@ import Pages from "../Pages/Pages";
 import Navigation from "../Navigation/Navigation";
 import CaracterPage from "../CaracretPage/CaracterPage";
 
+
+
+
 export default function Homepage () {
 
   let [page, setpage] = useState(1);
@@ -16,8 +19,6 @@ export default function Homepage () {
   let {results} = caracters;
   
   let [search, setSearch] = useState("");
-  
-  
   
   let api = `https://rickandmortyapi.com/api/character/?page=${page}&name=${search}`;
 
@@ -40,14 +41,8 @@ export default function Homepage () {
           <Route path="/:id" element={<CaracterPage results={results}/>}/>
         </Routes>
 
-          
-
           <Pages setpage={setpage} page={page} />
-
-
-           
-        
-
+          
       </Router>  
       );
 
