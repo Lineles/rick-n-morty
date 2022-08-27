@@ -10,7 +10,12 @@ export default function Homepage () {
   let [page, setpage] = useState(1);
   let [caracters, fetchedCaracters] = useState([]);
   let {info, results} = caracters;
-  let api = `https://rickandmortyapi.com/api/character/?page=${page}`;
+  
+  let [search, setSearch] = useState("");
+  
+  
+  
+  let api = `https://rickandmortyapi.com/api/character/?page=${page}&name=${search}`;
 
   useEffect(() => {
     (async function () {
@@ -23,7 +28,7 @@ export default function Homepage () {
     return (
         <div>
           <Header /> 
-          <Navigation setpage={setpage} page={page}/>  
+          <Navigation setpage={setpage} page={page} search={search} setSearch={setSearch}/>  
           <CaracterCard results={results} />
           <Pages setpage={setpage} page={page} /> 
         </div>

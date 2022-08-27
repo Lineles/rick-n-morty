@@ -17,28 +17,3 @@ nav{
   border-bottom: solid 2px darkgray;
   border-top: solid 2px darkgray;
 }
-
-.nav-input{
-  border: solid 2px darkgray;
-    width: 300px;
-    height: 28px;
-    border-radius: 20px 0 0 20px;
-    padding: 10px;
-    background-color: white;
-    font-family: 'Rubik Wet Paint', cursive;
-    font-weight: 100;
-    font-size: 18px;
-    color: var(--purplecolor);
-}
-
-.input-submit{
-  border: solid 2px darkgray;
-  width: 80px;
-  height: 52px;
-  border-radius: 0 20px 20px 0;
-  background-color: white;
-  font-family: 'Rubik Wet Paint', cursive;
-  font-weight: 100;
-  font-size: 18px;
-  color: var(--purplecolor);
-}
