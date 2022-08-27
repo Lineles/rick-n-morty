@@ -1,15 +1,19 @@
 import React from "react";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+
 import { useEffect, useState } from 'react';
+
 import CaracterCard from "../CaracterCard/CaracterCard";
 import Header from "../Header/Header";
 import Pages from "../Pages/Pages";
 import Navigation from "../Navigation/Navigation";
+import CaracterPage from "../CaracretPage/CaracterPage";
 
 export default function Homepage () {
 
   let [page, setpage] = useState(1);
   let [caracters, fetchedCaracters] = useState([]);
-  let {info, results} = caracters;
+  let {results} = caracters;
   
   let [search, setSearch] = useState("");
   
@@ -26,12 +30,25 @@ export default function Homepage () {
 
 
     return (
+      <Router>
         <div>
           <Header /> 
           <Navigation setpage={setpage} page={page} setSearch={setSearch}/>  
-          <CaracterCard results={results} />
-          <Pages setpage={setpage} page={page} /> 
         </div>
+        <Routes>
+          <Route path="/" element={<CaracterCard results={results}/>}/>
+          <Route path="/:id" element={<CaracterPage results={results}/>}/>
+        </Routes>
+
+          
+
+          <Pages setpage={setpage} page={page} />
+
+
+           
+        
+
+      </Router>  
       );
 
 
