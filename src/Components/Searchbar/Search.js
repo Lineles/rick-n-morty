@@ -1,10 +1,17 @@
 import "./Search.css"
 
-function Search () {
+function Search ({setSearch, setpage} ) {
 
     return(
         <form>
-            <input type="text" placeholder="Search for Caracter" className="nav-input"/> 
+            <input 
+                onChange={(input) => {
+                    setpage(1);
+                    setSearch(input.target.value);
+                }}
+                type="text" 
+                placeholder="Search for Caracter" 
+                className="nav-input"/> 
             <button className="input-submit"> Find </button>
         </form>
 

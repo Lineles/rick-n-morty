@@ -2,7 +2,7 @@ import "./Navigation.css"
 import Pages from "../Pages/Pages";
 import Search from "../Searchbar/Search";
 
-function Navigation ({setpage, page, setSearch, search}) {
+function Navigation ({setpage, page, setSearch}) {
 
         return (
 
@@ -11,7 +11,7 @@ function Navigation ({setpage, page, setSearch, search}) {
 
                 </div>
                 <div>
-                    <Search setSearch={setSearch} search={search} />
+                    <Search setSearch={setSearch} setpage={setpage} />
                 </div>
                 <div>
                     <Pages setpage={setpage} page={page}/>
