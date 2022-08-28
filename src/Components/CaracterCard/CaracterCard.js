@@ -1,7 +1,7 @@
 import "./CaracterCard.css"
-import { Link } from "react-router-dom"; 
+import { Link } from 'react-router-dom'; 
 
-function CaracterCard ({results}) {
+function CaracterCard ({results, page}) {
    
         let display;
 
@@ -12,7 +12,7 @@ function CaracterCard ({results}) {
                 return(
 
                 <Link 
-                    to={ `/${id}`}
+                    to ={ `${page}${id}`}
                     key={id} className="card-div effect" >
                     <img src={image} alt={name} className="card-img effect10"/>
                     <h1 className="card-name effect1">{name}</h1> 

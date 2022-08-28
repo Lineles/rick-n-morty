@@ -16,7 +16,7 @@ export default function Homepage () {
 
   let [page, setpage] = useState(1);
   let [caracters, fetchedCaracters] = useState([]);
-  let {results} = caracters;
+  let {results, id} = caracters;
   
   let [search, setSearch] = useState("");
   
@@ -37,8 +37,8 @@ export default function Homepage () {
           <Navigation setpage={setpage} page={page} setSearch={setSearch}/>  
         </div>
         <Routes>
-          <Route path="/" element={<CaracterCard results={results}/>}/>
-          <Route path="/:id" element={<CaracterPage results={results}/>}/>
+          <Route path="/" element={<CaracterCard page="/" results={results}/>}/>
+          <Route path="/:id" element={<CaracterPage  results={results}/>}/>
         </Routes>
 
           <Pages setpage={setpage} page={page} />
