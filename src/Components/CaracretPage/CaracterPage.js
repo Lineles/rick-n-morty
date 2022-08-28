@@ -22,32 +22,30 @@ function CaracterPage () {
     // let {name} = location
     // let {name} = origin
 
+ 
+    
     return (
-      
-        <div>
-
-            <div>
+    <div className="MainDiv">
+            <div className="imageDIV">
+              <img src={image} alt={name} className=""/>
+            </div>
+            <div className="nameDIV">
               {name}
             </div>
-            <div>
+            <div className="statusDIV">
               {status}
             </div>
-            <div>
+            <div className="speciesDIV">
               {species}
             </div>
-            <div>
+            <div className="typeDIV">
               {type}
             </div>          
-            <div>
+            <div className="genderDIV">
               {gender}
             </div>
-            <div>
-              {image}
-            </div>
-            <div>
-              {episode}
-            </div>   
         </div>
+
     )
 }
 

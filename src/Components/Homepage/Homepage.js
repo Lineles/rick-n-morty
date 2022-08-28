@@ -16,7 +16,7 @@ export default function Homepage () {
 
   let [page, setpage] = useState(1);
   let [caracters, fetchedCaracters] = useState([]);
-  let {results, id} = caracters;
+  let {results} = caracters;
   
   let [search, setSearch] = useState("");
   
