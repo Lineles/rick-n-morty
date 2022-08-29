@@ -7,8 +7,6 @@ function CaracterPage () {
    let { id } = useParams();
    let [caracters, fetchedCaracters] = useState([]);
 
-   console.log(caracters)
-
    let api = `https://rickandmortyapi.com/api/character/${id}`
 
    useEffect(() => {
@@ -18,9 +16,7 @@ function CaracterPage () {
     })(); 
   }, [api]);
     
-    let {name, status, species, type, gender, origin, location, image, episode} = caracters; 
-    // let {name} = location
-    // let {name} = origin
+    let {name, status, species, type, gender, origin, location, image} = caracters; 
 
  
     
@@ -44,6 +40,8 @@ function CaracterPage () {
             <div className="genderDIV">
               {gender}
             </div>
+           
+            
         </div>
 
     )
