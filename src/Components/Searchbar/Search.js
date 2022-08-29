@@ -11,8 +11,7 @@ function Search ({setSearch, setpage} ) {
                 }}
                 type="text" 
                 placeholder="Search for Caracter" 
-                className="nav-input"/> 
-            <button className="input-submit"> Find </button>
+                className="nav-input effekt3"/> 
         </form>
 
     );

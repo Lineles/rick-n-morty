@@ -1,18 +1,22 @@
 import "./CaracterCard.css"
+import { Link } from 'react-router-dom'; 
 
-function CaracterCard ({results}) {
+function CaracterCard ({results, page}) {
    
         let display;
 
         if (results) {
             display = results.map((x) => {
                 let {id, name, image} = x; 
+                
                 return(
 
-                <div key={id} className="card-div effect">
+                <Link 
+                    to ={ `${page}${id}`}
+                    key={id} className="card-div effect" >
                     <img src={image} alt={name} className="card-img effect10"/>
                     <h1 className="card-name effect1">{name}</h1> 
-                </div>
+                </Link>
                 ); 
 
 
@@ -20,7 +24,7 @@ function CaracterCard ({results}) {
         }else { 
             display = "No Caracter";
         };
-        return <div className="main-flex"> {display}</div>
+        return <div className="main-flex" > {display}</div>
 }
 
 export default CaracterCard; 
