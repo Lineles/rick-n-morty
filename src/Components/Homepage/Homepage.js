@@ -4,8 +4,6 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import { useEffect, useState } from 'react';
 
 import CaracterCard from "../CaracterCard/CaracterCard";
-import Pages from "../Pages/Pages";
-import Navigation from "../Navigation/Navigation";
 import CaracterPage from "../CaracretPage/CaracterPage";
 
 
@@ -31,16 +29,10 @@ export default function Homepage () {
 
     return (
       <Router>
-        <div>
-          <Navigation setpage={setpage} setSearch={setSearch}/>  
-        </div>
         <Routes>
-          <Route path="/" element={<CaracterCard page="/" results={results}/>}/>
+          <Route path="/" element={<CaracterCard page="/" results={results} setpage={setpage} setSearch={setSearch} pages={page}/>}/>
           <Route path="/:id" element={<CaracterPage  results={results}/>}/>
-        </Routes>
-
-          <Pages setpage={setpage} page={page} />
-          
+        </Routes>          
       </Router>  
       );
 
