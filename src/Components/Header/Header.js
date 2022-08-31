@@ -5,8 +5,7 @@ function Header (){
         
         <div className="header-div">
              <div>
-                
-
+             <img src="\images\rick-and-morty2.png" alt="Rick and Morty" className="header-img-left"></img>
              </div>
 
              <div >
@@ -16,8 +15,7 @@ function Header (){
              </div>
 
              <div>
-                
-            
+             <img src="\images\Rick-And-Morty.png" alt="Rick and Morty" className="header-img-right"></img>
              </div>
         </div>
 ); 

@@ -34,7 +34,7 @@ export default function Homepage () {
       <Router>
         <div>
           <Header /> 
-          <Navigation setpage={setpage} page={page} setSearch={setSearch}/>  
+          <Navigation setpage={setpage} setSearch={setSearch}/>  
         </div>
         <Routes>
           <Route path="/" element={<CaracterCard page="/" results={results}/>}/>

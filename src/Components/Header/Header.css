@@ -12,11 +12,18 @@
     /* border: solid; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--lightgreencolor);
 }
 
+.header-img-left{
+    height: 199px;
+}
+
+.header-img-right{
+    height: 154px;
+}
 
 .header-h1{
     font-family: 'Rubik Moonrocks', cursive;
