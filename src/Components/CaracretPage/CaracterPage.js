@@ -28,9 +28,14 @@ function CaracterPage () {
 
     <div>
       <NavigationNoSerch />
+
+      <button className="name-h1 effekt5" onClick={showIMG} >{name}</button>
       <div className="MainDiv">
+        <div>
+          <img src="\images\94aefc0b4cc029fb9ae73faa95c906d2.png" alt="hiddenIMG" id="hiddenIMG" className="hiddenIMG"></img>
+        </div>
         <div className="imageDIV">
-          <img src={image} alt={name} className="caracter-img"/>
+          <img src={image} alt={name} className="caracter-img" />
         </div>
 
         <div className="infocard">
@@ -48,5 +53,17 @@ function CaracterPage () {
     </div>
     )
 }
+
+
+function showIMG() {
+  const hiddenImg = document.getElementById("hiddenIMG")
+  let imgstatus = hiddenImg.style.display
+  if (imgstatus === "none"){
+    hiddenImg.style.display = "inline"
+  } else {
+    hiddenImg.style.display = "none"
+  }
+ }
+
 
 export default CaracterPage; 

@@ -8,13 +8,28 @@
   }
 
 
+  .name-h1{
+    border: solid 2px var(--bluecolor);
+    display: inline-block;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 52px;
+    padding: 18px 77px;
+    font-weight: 300;
+    border-radius: 28px;
+    background-color: var(--lightgreencolor);
+    margin-top: 65px;
+    margin-bottom: 0px;
+  }
+
+
 .MainDiv{
-    margin-top: 50px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    padding-top: 0px;
 }
 
 .imageDIV{
@@ -77,7 +92,12 @@
     border-bottom: solid 1px darkgray;
 }
 
-
+.hiddenIMG{
+    position: absolute;
+    left: 0px;
+    width: 601px;
+    display: none;
+}
 
 .infos{
     padding-top: 5px;
@@ -108,3 +128,16 @@
 .infocard:hover{
     z-index: 11;
 }
+
+.effekt5:hover {
+    position: relative;
+    animation: effect5 1000ms;
+  }
+  
+  @keyframes effect5 {
+    0%   {top: 0px; background: var(--bluecolor)}
+    25%  {top: 5px; background: var(--graycolor)}
+    50%  {top: 0px; background: var(--greencolor)}
+    75%  {top: 5px; background: var(--lightbluecolor)}
+    100% {top: 0px; background: var(--lightgreencolor)}
+  }  
