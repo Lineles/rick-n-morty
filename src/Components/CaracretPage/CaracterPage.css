@@ -1,52 +1,143 @@
+:root {
+    --purplecolor: #3C1642;
+    --bluecolor: #086375;
+    --lightbluecolor: #1DD3B0;
+    --greencolor: #AFFC41;
+    --lightgreencolor: #B2FF9E; 
+    --graycolor: #d3d3d3;
+  }
+
+
+  .name-h1{
+    border: solid 2px var(--bluecolor);
+    display: inline-block;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 52px;
+    padding: 18px 77px;
+    font-weight: 300;
+    border-radius: 28px;
+    background-color: var(--lightgreencolor);
+    margin-top: 65px;
+    margin-bottom: 0px;
+  }
+
+
 .MainDiv{
-    margin-top: 50px;
-}
-
-.nameDIV{
-    font-family: 'Rubik Wet Paint', cursive;
-    font-size: 30px;
-    color: aliceblue;
-}
-
-.genderDIV{
-    font-family: 'Rubik Wet Paint', cursive;
-    font-size: 30px;
-    color: aliceblue;
-
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 0px;
 }
 
 .imageDIV{
     font-family: 'Rubik Wet Paint', cursive;
     font-size: 30px;
-    color: aliceblue;
+    /* border: solid black 1px; */
+    padding: 16px;
+    padding-bottom: 64px;
+    background-color: var(--graycolor);
+    border-radius: 4px;
+    position: relative;
+    transform: rotate(-8deg);
+    left: -196px;
+    top: 69px;
+    z-index: 8;
 }
 
-.typeDIV{
-    font-family: 'Rubik Wet Paint', cursive;
-    font-size: 30px;
-    color: aliceblue;
+.caracter-img{
+    border: solid black 1px;
 }
 
-.speciesDIV{
-    font-family: 'Rubik Wet Paint', cursive;
-    font-size: 30px;
-    color: aliceblue;
+.infocard{
+    position: relative;
+    top: -323px;
+    left: 146px;
+    z-index: 9;
 }
 
-.statusDIV{
-    font-family: 'Rubik Wet Paint', cursive;
-    font-size: 30px;
-    color: aliceblue;
+.papier{
+    width: 708px;
+    z-index: -1;
+    
+    transform: rotate(103deg);
 }
 
-.locationDIV{
-    font-family: 'Rubik Wet Paint', cursive;
-    font-size: 30px;
-    color: aliceblue;
+
+.info{
+    width: 418px;
+    height: 495px;
+    text-align: start;
+    /* border: solid black 1px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top: 29px;
+    left: 159px;
+    transform: rotate(10deg);
 }
 
-.originDIV{
-    font-family: 'Rubik Wet Paint', cursive;
-    font-size: 30px;
-    color: aliceblue;
+
+
+.lineflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: -webkit-fill-available;
+    border-bottom: solid 1px darkgray;
 }
+
+.hiddenIMG{
+    position: absolute;
+    left: 0px;
+    width: 601px;
+    display: none;
+}
+
+.infos{
+    padding-top: 5px;
+    text-align: left;
+    font-weight: 900;
+    text-decoration: underline;
+    font-size: 21px;
+}
+
+.answers{
+    margin: 0px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 44px;
+    font-family: 'Qwitcher Grypen', cursive;
+    /* border-bottom: solid black 1px; */
+    width: 245px;
+    /* border: solid 1px;  */
+}
+
+
+.imageDIV:hover{
+    z-index: 11;
+    box-shadow: 0 1.9rem 3.8rem var(--greencolor), 0 5.5rem 5.2rem var(--lightbluecolor);
+    border: solid black 1px;
+}
+
+.infocard:hover{
+    z-index: 11;
+}
+
+.effekt5:hover {
+    position: relative;
+    animation: effect5 1000ms;
+  }
+  
+  @keyframes effect5 {
+    0%   {top: 0px; background: var(--bluecolor)}
+    25%  {top: 5px; background: var(--graycolor)}
+    50%  {top: 0px; background: var(--greencolor)}
+    75%  {top: 5px; background: var(--lightbluecolor)}
+    100% {top: 0px; background: var(--lightgreencolor)}
+  }  

@@ -1,9 +1,8 @@
-import "./Navigation.css"
-import Search from "../Searchbar/Search";
-import error from "../404";
+import "./NavigationNoSerch.css"
 import { Link } from "react-router-dom";
+import error from "../404";
 
-function Navigation ({setpage, setSearch}) {
+function NavigationNoSerch ({setpage, setSearch}) {
 
         return (
 
@@ -14,7 +13,7 @@ function Navigation ({setpage, setSearch}) {
                 </div>
 
                 <div>
-                    <Search setSearch={setSearch} setpage={setpage} />
+
                 </div>
                 <div>
                     <Link to={error}>Witch Caracter are you?</Link>
@@ -27,4 +26,5 @@ function Navigation ({setpage, setSearch}) {
 
 }
 
-export default Navigation; 
+
+export default NavigationNoSerch;
