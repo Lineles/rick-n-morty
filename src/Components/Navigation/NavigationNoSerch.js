@@ -7,16 +7,19 @@ function NavigationNoSerch ({setpage, setSearch}) {
         return (
 
             <nav> 
-                <div>
+                   <div>
                     <Link to={error}>Rick Tak Toe</Link>
                     <Link to={error}>Rick Paper Sissors</Link>
-                </div>
-
-                <div>
-
-                </div>
-                <div>
                     <Link to={error}>Witch Caracter are you?</Link>
+                </div>
+
+                
+                <div>
+                    <form>
+                        <input type="text" placeholder="Rick Sanchez" /> 
+                        <input type="password" placeholder="Password"/> 
+                        <Link to={error}>Login</Link>
+                    </form>
                 </div>
 
 
