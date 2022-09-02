@@ -135,9 +135,9 @@
   }
   
   @keyframes effect5 {
-    0%   {top: 0px; background: var(--bluecolor)}
-    25%  {top: 5px; background: var(--graycolor)}
-    50%  {top: 0px; background: var(--greencolor)}
-    75%  {top: 5px; background: var(--lightbluecolor)}
-    100% {top: 0px; background: var(--lightgreencolor)}
+    0%   { background: var(--bluecolor)}
+    25%  { background: var(--graycolor)}
+    50%  { background: var(--greencolor)}
+    75%  { background: var(--lightbluecolor)}
+    100% { background: var(--lightgreencolor)}
   }  
