@@ -30,7 +30,7 @@ export default function Homepage () {
     return (
       <Router>
         <Routes>
-          <Route path="/" element={<CaracterCard page="/" results={results} setpage={setpage} setSearch={setSearch} />}/>
+          <Route path="/" element={<CaracterCard page="/" results={results} setpage={setpage} setSearch={setSearch} currentPage={page} />}/>
           <Route path="/:id" element={<CaracterPage  results={results} />}/>
         </Routes>          
       </Router>  

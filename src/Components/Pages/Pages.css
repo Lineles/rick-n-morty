@@ -1,0 +1,27 @@
+:root {
+    --purplecolor: #3C1642;
+    --bluecolor: #086375;
+    --lightbluecolor: #1DD3B0;
+    --greencolor: #AFFC41;
+    --lightgreencolor: #B2FF9E; 
+    --graycolor: #d3d3d3;
+  }
+
+.pages{
+  background-color: var(--graycolor);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  border-bottom: solid 2px darkgray;
+  border-top: solid 2px darkgray;
+}
+
+.page-button{
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: solid 2px var(--purplecolor);
+    font-family: 'Rubik Wet Paint', cursive;
+}

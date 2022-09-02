@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Navigation from "../Navigation/Navigation";
 import Pages from "../Pages/Pages";
 
-function CaracterCard ({results, page, setpage, setSearch}) {
+function CaracterCard ({results, currentPage, setpage, page, setSearch}) {
    
         let display;
 
@@ -29,7 +29,7 @@ function CaracterCard ({results, page, setpage, setSearch}) {
          <div>   
             <Navigation setpage={setpage} setSearch={setSearch}/> 
             <div className="main-flex" > {display}</div>
-            <Pages setpage={setpage} page={page} />
+            <Pages setpage={setpage} currentPage={currentPage} />
         </div>)
 }
 
