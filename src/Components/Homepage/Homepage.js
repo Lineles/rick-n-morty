@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 
 import CaracterCard from "../CaracterCard/CaracterCard";
 import CaracterPage from "../CaracretPage/CaracterPage";
+import Registration from "../Registration/Registration";
 
 
 
@@ -32,6 +33,7 @@ export default function Homepage () {
         <Routes>
           <Route path="/" element={<CaracterCard page="/" results={results} setpage={setpage} setSearch={setSearch} currentPage={page} />}/>
           <Route path="/:id" element={<CaracterPage  results={results} />}/>
+          <Route path="/registration" element={<Registration /> }/>
         </Routes>          
       </Router>  
       );

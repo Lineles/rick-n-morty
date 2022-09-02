@@ -3,6 +3,7 @@ import Search from "../Searchbar/Search";
 import error from "../404";
 import { Link } from "react-router-dom";
 
+
 function Navigation ({setpage, setSearch}) {
 
         return (
@@ -19,10 +20,10 @@ function Navigation ({setpage, setSearch}) {
                 </div>
                 <div>
                     <form>
-                        <button to={error}  className="nav-button">Create Acc</button>
+                    <Link to="/registration"  className="nav-link">Create Acc</Link>
+                        <Link to={error} className="nav-link">Login</Link>
                         <input type="text" placeholder="Rick Sanchez"  className="nav-input"/> 
                         <input type="password" placeholder="Password" className="nav-input"/> 
-                        <button to={error} className="nav-button">Login</button>
                     </form>
                 </div>
 

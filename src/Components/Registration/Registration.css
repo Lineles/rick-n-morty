@@ -1,0 +1,111 @@
+:root {
+    --purplecolor: #3C1642;
+    --bluecolor: #086375;
+    --lightbluecolor: #1DD3B0;
+    --greencolor: #AFFC41;
+    --lightgreencolor: #B2FF9E; 
+    --graycolor: #d3d3d3;
+  }
+
+.form-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--bluecolor);
+    width: 531px;
+    height: 341px;
+    border-radius: 42px;
+    margin-top: 50px;
+    border: solid 2px var(--graycolor);
+}
+
+.reg-input{
+    text-align: center;
+    margin: 0 4px;
+    width: 230px;
+    border-radius: 10px;
+    height: 26px;
+    padding: 6px;
+    border: solid 1px darkgray;
+    font-size: 18px;
+}
+
+.reg-input-label{
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    margin-top: 11px;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+.form-div-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    background-color: var(--lightgreencolor);
+}
+
+.SignUp-div{
+    width: 560px;
+    background-color: var(--lightbluecolor);
+    border: solid 2px var(--bluecolor);
+    border-bottom: solid 5px var(--bluecolor);
+    border-radius: 40px 40px 0 0;
+}
+
+.SignUp-h1{
+    font-family: 'Rubik Wet Paint', cursive;
+    font-weight: 200;
+}
+
+.form-buttons{
+    padding: 14px;
+    background-color: var(--lightgreencolor);
+    width: 532px;
+    height: 60px;
+    border-radius: 0 0 40px 40px;
+}
+
+.R-button{
+    margin-top: 14px;
+    margin-right: 20px;
+    width: 90px;
+    height: 30px;
+    background-color: var(--graycolor);
+    border: solid 2px var(--bluecolor);
+    border-radius: 10px;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+.S-button{
+    margin-top: 14px;
+    margin-left: 20px;
+    width: 90px;
+    height: 30px;
+    border: solid 2px var(--bluecolor);
+    background-color: var(--graycolor);
+    border-radius: 10px;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+.S-button:hover{
+    background-color: var(--lightbluecolor);
+}
+
+.R-button:hover{
+    background-color: darkmagenta;
+    color: aliceblue;
+}

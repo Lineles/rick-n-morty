@@ -26,6 +26,7 @@ nav{
   margin-right: 20px;
   font-family: 'Rubik Wet Paint', cursive;
   border-left: solid 2px darkgray;
+  font-weight: 200;
 }
 
 .nav-button{
