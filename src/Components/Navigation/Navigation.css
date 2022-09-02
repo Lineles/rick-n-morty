@@ -30,12 +30,20 @@ nav{
 
 .nav-button{
   text-align: center;
-  padding-left: 10px;
+  margin: 0 4px;
+  width: 92px;
+  border-radius: 10px;
+  padding: 6px;
+  border: solid 1px darkgray;
 }
 
 .nav-input{
   text-align: center;
-  padding-left: 10px;
+  margin: 0 4px;
+  width: 118px;
+  border-radius: 10px;
+  padding: 6px;
+  border: solid 1px darkgray;
 }
 
 
