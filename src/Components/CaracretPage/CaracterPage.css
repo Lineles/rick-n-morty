@@ -25,7 +25,7 @@
 .MainDiv{
     margin-top: 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -42,8 +42,8 @@
     border-radius: 4px;
     position: relative;
     transform: rotate(-8deg);
-    left: -196px;
-    top: 69px;
+    left: 43px;
+    /* top: -273px; */
     z-index: 8;
 }
 
@@ -53,8 +53,8 @@
 
 .infocard{
     position: relative;
-    top: -323px;
-    left: 146px;
+    top: 87px;
+    left: -137px;
     z-index: 9;
 }
 
@@ -94,8 +94,9 @@
 
 .hiddenIMG{
     position: absolute;
-    left: 0px;
-    width: 601px;
+    left: -44px;
+    top: 458px;
+    width: 568px;
     display: none;
 }
 

@@ -1,6 +1,7 @@
 import "./CaracterPage.css";
 import React from "react";
 import NavigationNoSerch from "../Navigation/NavigationNoSerch";
+
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
@@ -48,6 +49,8 @@ function CaracterPage () {
             <div className="lineflex"> <p className="infos">Last known Location:</p>  <p className="answers">{location?.name}</p> </div>
             <div className="lineflex"> <p className="infos">Origin:</p> <p className="answers">{origin?.name}</p> </div>
           </div>
+        </div>
+        <div>
         </div>
       </div>
     </div>
