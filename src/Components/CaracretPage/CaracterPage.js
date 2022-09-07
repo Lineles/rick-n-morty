@@ -29,8 +29,9 @@ function CaracterPage () {
 
     <div>
       <NavigationNoSerch />
-
-      <button className="name-h1 effekt5" onClick={showIMG} >{name}</button>
+      <div className="buttonDiv">
+        <button className="name-h1 effekt5" onClick={showIMG} >{name}</button>
+      </div>
       <div className="MainDiv">
         <div>
           <img src="\images\94aefc0b4cc029fb9ae73faa95c906d2.png" alt="hiddenIMG" id="hiddenIMG" className="hiddenIMG"></img>
@@ -49,8 +50,6 @@ function CaracterPage () {
             <div className="lineflex"> <p className="infos">Last known Location:</p>  <p className="answers">{location?.name}</p> </div>
             <div className="lineflex"> <p className="infos">Origin:</p> <p className="answers">{origin?.name}</p> </div>
           </div>
-        </div>
-        <div>
         </div>
       </div>
     </div>

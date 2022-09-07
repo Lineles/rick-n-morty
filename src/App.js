@@ -5,6 +5,7 @@ import CaracterCard from "./Components/CaracterCard/CaracterCard";
 import CaracterPage from "./Components/CaracretPage/CaracterPage";
 import Registration from "./Components/Registration/Registration";
 import { YourCaracter } from "./Components/YourCaracter/YourCaracter";
+import { Footer } from "./Components/Footer/Footer";
 
 import Header from './Components/Header/Header';
 import './App.css';
@@ -34,8 +35,9 @@ function App() {
           <Route path="/:id" element={<CaracterPage  results={results} />}/>
           <Route path="/registration" element={<Registration /> }/>
           <Route path="/yourCaracter" element={<YourCaracter />} /> 
-        </Routes>          
-      </Router>  
+        </Routes>   
+      <Footer />       
+    </Router>  
   );
 }
 

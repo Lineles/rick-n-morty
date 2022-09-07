@@ -21,15 +21,21 @@
     margin-bottom: 0px;
   }
 
+.buttonDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 .MainDiv{
-    margin-top: 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px;
     padding-top: 0px;
+    margin-bottom: 200px;
 }
 
 .imageDIV{

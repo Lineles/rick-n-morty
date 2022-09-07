@@ -8,7 +8,7 @@ function Header (){
              <img src="\images\rick-and-morty2.png" alt="Rick and Morty" className="header-img-left"></img>
              </div>
 
-             <div >
+             <div className="header-text" >
                  <h3 className="header-h3"> The </h3>
                  <h1 className="header-h1"> Rick and Morty </h1>
                  <h3 className="header-h3-2"> Character Encyclopaedia</h3>
