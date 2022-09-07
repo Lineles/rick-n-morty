@@ -1,22 +1,23 @@
+import "./Pages.css"
 
-function Pages ({setpage, page}) {
+function Pages ({setpage, currentPage}) {
 
         let next = () => {
-            if(page === 42) return;
+            if(currentPage === 42) return;
             setpage((x) => x+1)
         };
 
 
         let last = () => {
-            if(page === 1) return;
+            if(currentPage === 1) return;
             setpage((x) => x-1)
         };
     
     return(
 
-        <div>
-            <button onClick={last}>last</button>
-            <button onClick={next}>next</button>
+        <div className="pages" >
+            <button onClick={last} className="page-button" >last</button>
+            <button onClick={next} className="page-button" >next</button>
         </div>
     )
 

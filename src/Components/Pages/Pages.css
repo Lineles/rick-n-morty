@@ -1,0 +1,33 @@
+:root {
+    --purplecolor: #3C1642;
+    --bluecolor: #086375;
+    --lightbluecolor: #1DD3B0;
+    --greencolor: #AFFC41;
+    --lightgreencolor: #B2FF9E; 
+    --graycolor: #d3d3d3;
+  }
+
+.pages{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-button{
+  margin: 0 10px;
+  padding: 8px 13px;
+  border-radius: 16px;
+  border: solid 2px var(--bluecolor);
+  font-family: 'Rubik Wet Paint', cursive;
+  font-size: 19px;
+  background-color: var(--purplecolor);
+  color: var(--graycolor);
+  font-weight: 100;
+}
+
+.page-button:hover{
+    background-color: var(--bluecolor);
+    color: var(--greencolor);
+    border: solid 2px var(--lightbluecolor);
+}

@@ -21,15 +21,21 @@
     margin-bottom: 0px;
   }
 
+.buttonDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 .MainDiv{
-    margin-top: 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px;
     padding-top: 0px;
+    margin-bottom: 200px;
 }
 
 .imageDIV{
@@ -42,8 +48,8 @@
     border-radius: 4px;
     position: relative;
     transform: rotate(-8deg);
-    left: -196px;
-    top: 69px;
+    left: 43px;
+    /* top: -273px; */
     z-index: 8;
 }
 
@@ -53,8 +59,8 @@
 
 .infocard{
     position: relative;
-    top: -323px;
-    left: 146px;
+    top: 87px;
+    left: -137px;
     z-index: 9;
 }
 
@@ -94,8 +100,9 @@
 
 .hiddenIMG{
     position: absolute;
-    left: 0px;
-    width: 601px;
+    left: -44px;
+    top: 458px;
+    width: 568px;
     display: none;
 }
 
@@ -135,9 +142,9 @@
   }
   
   @keyframes effect5 {
-    0%   {top: 0px; background: var(--bluecolor)}
-    25%  {top: 5px; background: var(--graycolor)}
-    50%  {top: 0px; background: var(--greencolor)}
-    75%  {top: 5px; background: var(--lightbluecolor)}
-    100% {top: 0px; background: var(--lightgreencolor)}
+    0%   { background: var(--bluecolor)}
+    25%  { background: var(--graycolor)}
+    50%  { background: var(--greencolor)}
+    75%  { background: var(--lightbluecolor)}
+    100% { background: var(--lightgreencolor)}
   }  
