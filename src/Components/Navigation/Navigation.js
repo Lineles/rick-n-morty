@@ -12,7 +12,7 @@ function Navigation ({setpage, setSearch}) {
                 <div>
                     <Link to={error} className="nav-link">Rick Tak Toe</Link>
                     <Link to={error} className="nav-link">Rick Paper Scissors</Link>
-                    <Link to={error} className="nav-link">Which Character are you?</Link>
+                    <Link to="/yourCaracter" className="nav-link">Which Character are you?</Link>
                 </div>
 
                 <div>

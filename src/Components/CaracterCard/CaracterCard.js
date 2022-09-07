@@ -2,7 +2,6 @@ import "./CaracterCard.css"
 import { Link } from 'react-router-dom'; 
 import Navigation from "../Navigation/Navigation";
 import Pages from "../Pages/Pages";
-import { CommentSection } from "../CommentSection/CommentSection";
 
 function CaracterCard ({results, currentPage, setpage, page, setSearch}) {
    
@@ -28,7 +27,6 @@ function CaracterCard ({results, currentPage, setpage, page, setSearch}) {
         };
         return (
          <div>  
-            <CommentSection />  
             <Navigation setpage={setpage} setSearch={setSearch}/> 
             <div className="main-flex" > {display}</div>
             <Pages setpage={setpage} currentPage={currentPage} />
