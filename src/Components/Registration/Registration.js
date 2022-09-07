@@ -1,8 +1,15 @@
+import React, { useEffect, useState } from "react";
+
 import "./Registration.css";
 import NavigationNoSerch from "../Navigation/NavigationNoSerch";
 
 
 function Registration(){
+
+const [ FirstName, setFirstName ] = useState("")
+const [ LastName, setLastName ] = useState("")    
+const [ UserName, setUserName ] = useState("")
+const [ Email, setEmail ] = useState("")
 
     return(
         <div>
@@ -15,21 +22,45 @@ function Registration(){
                     <div className="form-div-flex">
                         <div className="form-input-box">
                             <label className="reg-input-label">First Name</label>
-                            <input type="text" placeholder="Rick"  className="reg-input"/> 
+                            <input 
+                                 type="text" 
+                                 placeholder="Rick" 
+                                 className="reg-input"
+                                 required
+                                 value={FirstName}
+                                 onChange={(e) => setFirstName(e.target.value)}/> 
                         </div>
                         <div className="form-input-box">
                             <label className="reg-input-label">Last Name</label>
-                            <input type="text" placeholder="Sanchez"  className="reg-input"/> 
+                            <input 
+                                 type="text" 
+                                 placeholder="Sanchez"  
+                                 className="reg-input"
+                                 required
+                                 value={LastName}
+                                 onChange={(e) => setLastName(e.target.value)}/> 
                         </div>
                     </div>
                     <div className="form-div-flex">
                         <div className="form-input-box">
                             <label className="reg-input-label">Username</label>
-                            <input type="text" placeholder="BigBrain"  className="reg-input"/> 
+                            <input 
+                                 type="text" 
+                                 placeholder="BigBrain"  
+                                 className="reg-input"
+                                 required
+                                 value={UserName}
+                                 onChange={(e) => setUserName(e.target.value)}/> 
                         </div>
                         <div className="form-input-box">
                             <label className="reg-input-label">E-Mail</label>
-                            <input type="text" placeholder="RickThe#1@galactic.gl"  className="reg-input"/> 
+                            <input 
+                                  type="text" 
+                                  placeholder="RickThe#1@galactic.gl"  
+                                  className="reg-input"
+                                  required
+                                  value={Email}
+                                  onChange={(e) => setEmail(e.target.value)}/> 
                         </div>
                     </div>
                     <div className="form-buttons">
