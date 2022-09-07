@@ -67,8 +67,10 @@
 }
 
 .SignUp-h1{
+    display: flex;
     font-family: 'Rubik Wet Paint', cursive;
     font-weight: 200;
+    justify-content: center;
 }
 
 .form-buttons{
@@ -77,6 +79,8 @@
     width: 532px;
     height: 60px;
     border-radius: 0 0 40px 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .R-button{
