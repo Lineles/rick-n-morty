@@ -1,6 +1,7 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import React, { useEffect, useState } from 'react';
 
+import HomePage from "./Components/HomePage/HomePage";
 import CaracterCard from "./Components/CaracterCard/CaracterCard";
 import CaracterPage from "./Components/CaracretPage/CaracterPage";
 import Registration from "./Components/Registration/Registration";
@@ -31,8 +32,9 @@ function App() {
     <Router>
       <Header /> 
         <Routes>
-          <Route path="/" element={<CaracterCard page="/" results={results} setpage={setpage} setSearch={setSearch} currentPage={page} />}/>
-          <Route path="/:id" element={<CaracterPage  results={results} />}/>
+          <Route path="/" element={<HomePage /> } /> 
+          <Route path="/caracters" element={<CaracterCard page="/" results={results} setpage={setpage} setSearch={setSearch} currentPage={page} />}/>
+          <Route path="/caracters/:id" element={<CaracterPage  results={results} />}/>
           <Route path="/registration" element={<Registration /> }/>
           <Route path="/yourCaracter" element={<YourCaracter />} /> 
         </Routes>   
