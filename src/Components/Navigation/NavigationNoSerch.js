@@ -8,8 +8,8 @@ function NavigationNoSerch ({setpage, setSearch}) {
 
             <nav> 
                 <div>
-                    <Link to="/" className="nav-link">Home Page</Link>
-                    <Link to="/caracters" className="nav-link">Caracters</Link>
+                    <Link to="/homepage" className="nav-link">Home Page</Link>
+                    <Link to="/" className="nav-link">Caracters</Link>
                     <Link to="/registration"  className="nav-link">Create Acc</Link>
                 </div>
 

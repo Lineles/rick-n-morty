@@ -1,0 +1,41 @@
+
+
+
+.homepage-main-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.homepage-panel{
+    border: solid black 1px;
+    background-color: antiquewhite;
+    width: 40%;
+    height: 314px;
+}
+
+
+.homepage-effekt1:hover{
+    transform: translate( -18px, -18px);
+    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+}
+
+.homepage-effekt2:hover{
+    transform: translate( 18px, -18px);
+    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+}
+
+.homepage-effekt3:hover{
+    transform: translate( -18px, 18px);
+    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+}
+
+.homepage-effekt4:hover{
+    transform: translate( 18px, 18px);
+    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+}
