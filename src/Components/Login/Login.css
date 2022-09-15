@@ -5,7 +5,7 @@
     --greencolor: #AFFC41;
     --lightgreencolor: #B2FF9E; 
     --graycolor: #d3d3d3;
-  }
+}
 
 .form-flex{
     display: flex;
@@ -19,13 +19,20 @@
     border: solid 2px var(--graycolor);
 }
 
+.SignUp-div{
+    width: 416px;
+    background-color: var(--lightbluecolor);
+    border: solid 2px var(--bluecolor);
+    border-bottom: solid 5px var(--bluecolor);
+    border-radius: 40px 40px 0 0;
+}
+
 .reg-input{
     text-align: center;
     margin: 0 4px;
-    width: 230px;
+    width: 166px;
     border-radius: 10px;
     height: 26px;
-    padding: 6px;
     border: solid 1px darkgray;
     font-size: 18px;
 }
@@ -55,26 +62,19 @@
     background-color: var(--lightgreencolor);
 }
 
-.SignUp-div{
-    width: 560px;
-    background-color: var(--lightbluecolor);
-    border: solid 2px var(--bluecolor);
-    border-bottom: solid 5px var(--bluecolor);
-    border-radius: 40px 40px 0 0;
-}
 
 .SignUp-h1{
     display: flex;
     font-family: 'Rubik Wet Paint', cursive;
     font-weight: 200;
     justify-content: center;
+    margin: 8px;
 }
 
 .form-buttons{
-    padding: 14px;
+    padding: 14px; 
     background-color: var(--lightgreencolor);
-    width: 532px;
-    height: 60px;
+    width: 388px;
     border-radius: 0 0 40px 40px;
     display: flex;
     justify-content: center;

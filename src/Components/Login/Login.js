@@ -1,43 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 
-import "./Registration.css";
+import "./Login.css"
 
+function Login () {
 
-function Registration(){
-
-const [ FirstName, setFirstName ] = useState("")
-const [ LastName, setLastName ] = useState("")    
-const [ UserName, setUserName ] = useState("")
-const [ Email, setEmail ] = useState("")
+    const [ UserName, setUserName ] = useState("")
+    const [ Email, setEmail ] = useState("")
 
     return(
         <div>
-            <div>
                 <form className="form-flex">
                     <div className="SignUp-div">
                         <h1 className="SignUp-h1">Sign Up</h1>
-                    </div>
-                    <div className="form-div-flex">
-                        <div className="form-input-box">
-                            <label className="reg-input-label">First Name</label>
-                            <input 
-                                 type="text" 
-                                 placeholder="Rick" 
-                                 className="reg-input"
-                                 required
-                                 value={FirstName}
-                                 onChange={(e) => setFirstName(e.target.value)}/> 
-                        </div>
-                        <div className="form-input-box">
-                            <label className="reg-input-label">Last Name</label>
-                            <input 
-                                 type="text" 
-                                 placeholder="Sanchez"  
-                                 className="reg-input"
-                                 required
-                                 value={LastName}
-                                 onChange={(e) => setLastName(e.target.value)}/> 
-                        </div>
                     </div>
                     <div className="form-div-flex">
                         <div className="form-input-box">
@@ -67,8 +42,7 @@ const [ Email, setEmail ] = useState("")
                     </div>
                 </form>
             </div>
-        </div>
     )
-}
+};
 
-export default Registration; 
+export default Login;

@@ -44,13 +44,68 @@
     box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
 }
 
+.homepage-panel2 {
+  background-color: #f9f9f9;
+  position: relative;
+  width: 40%;
+  height: 314px;
+  overflow: hidden;
+  border-top: solid 2px var(--lightbluecolor);
+  border-bottom: solid 2px var(--lightbluecolor);
+  border-left: solid 2px var(--lightbluecolor);
+}
+
+.panel2-h1{
+  position: absolute;
+  display: inline-block;
+  top: 20px;
+  font-size: 57px;
+  left: 50px;
+  z-index: 1;
+  font-weight: 100;
+  font-family: 'Rubik Wet Paint', cursive;
+  height: 147px;
+  width: 493px;
+  overflow-wrap: break-word;
+  text-align: center;
+  transform: rotate(-10deg);
+  color: black;
+  text-shadow: 11px 11px var(--lightbluecolor);
+}
+
 .panel2-img {
     height: 135%;
     position: relative;
     left: 302px;
 }
 
+.Registration-box{
+  position: absolute;
+  width: 445px;
+  top: 8px;
+  left: 143px;
+  transform: rotate(0deg);
+}
 
+  .overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bluecolor);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    z-index: 2;
+  }
+  
+  .homepage-panel2:hover .overlay2 {
+    width: 100%;
+    left: 0;
+  }
+
+  
 /** panel3 **/
 .homepage-panel3 {
     background-color: #f9f9f9;
@@ -224,7 +279,6 @@
   height: 100%;
   width: 80%;
   background-color: var(--bluecolor);
-  z-index: 4;
 }
 
 .homepage-panel5:hover .overlay5 {
@@ -241,7 +295,6 @@
   position: relative;
   left: 652px;
   top: -83px;
-  z-index: 5;
 }
 
 .panel5-h1-2{

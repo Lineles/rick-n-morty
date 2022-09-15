@@ -1,21 +1,30 @@
-
-import NavigationNoSerch from "../Navigation/NavigationNoSerch";
+import React from "react";
+import Login from "../Login/Login";
 
 import "./HomePage.css"
 
 function HomePage () {
-    
+ 
+
+
     return(
         <div>
-            <NavigationNoSerch />
 
                 <div className="homepage-main-flex">
                     <div className="homepage-panel homepage-effekt1"> 
                         <img className="panel1-img" src="\images\abradolflincon.png" alt="Abradolf Lincler" />
                     </div>
-                    <div className="homepage-panel homepage-effekt2">  
+
+                    <div className="homepage-panel2 homepage-effekt2">  
+                        <h1 className="panel2-h1"> why aren't you registered yet ?</h1>
                         <img className="panel2-img" src="\images\meeseeks1.png" alt="Mr. Meeseeks" />
+                        <div class="overlay2">
+                             <div className="Registration-box">
+                                 <Login />
+                             </div>
+                        </div>
                     </div>
+
                     <div class="homepage-panel3">
                         <h1 className="panel3-h1"> Chat corner</h1>
                         <img  className="panel3-img" src="\images\birdperson.png" alt="Bird Preson" />

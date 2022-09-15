@@ -1,6 +1,6 @@
 import "./CaracterCard.css"
 import { Link } from 'react-router-dom'; 
-import Navigation from "../Navigation/Navigation";
+import Search from "../Searchbar/Search";
 import Pages from "../Pages/Pages";
 
 function CaracterCard ({results, currentPage, setpage, page, setSearch}) {
@@ -27,7 +27,7 @@ function CaracterCard ({results, currentPage, setpage, page, setSearch}) {
         };
         return (
          <div>  
-            <Navigation setpage={setpage} setSearch={setSearch}/> 
+            <Search setpage={setpage} setSearch={setSearch}/> 
             <div className="main-flex" > {display}</div>
             <Pages setpage={setpage} currentPage={currentPage} />
         </div>)

@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import React, { useEffect, useState } from 'react';
 
 import HomePage from "./Components/HomePage/HomePage";
+import NavigationNoSerch from "./Components/Navigation/NavigationNoSerch";
 import CaracterCard from "./Components/CaracterCard/CaracterCard";
 import CaracterPage from "./Components/CaracretPage/CaracterPage";
 import Registration from "./Components/Registration/Registration";
@@ -31,6 +32,7 @@ function App() {
   return (
     <Router>
       <Header /> 
+      <NavigationNoSerch />
         <Routes>
           <Route path="/homepage" element={<HomePage results={results}/> } /> 
           <Route path="/" element={<CaracterCard page="/" results={results} setpage={setpage} setSearch={setSearch} currentPage={page} />}/>
