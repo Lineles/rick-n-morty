@@ -8,7 +8,6 @@ function HomePage () {
     
     let [caracters, fetchedCaracters] = useState([])
 
-
     let api = `https://rickandmortyapi.com/api/character/25`
  
  
@@ -21,7 +20,7 @@ function HomePage () {
  
  
      
-     let {name, status, species, type, gender, image, origin, location } = caracters; 
+     let {name, status, species, type, gender, image } = caracters; 
     
     return(
         <div>
@@ -29,19 +28,16 @@ function HomePage () {
 
                 <div className="homepage-main-flex">
                     <div className="homepage-panel homepage-effekt1"> 
-                        <img src={image} alt={name} />
-                        <h1 >{name}</h1>
-                        <h1 >{status}</h1>
-                        <h1 >{species}</h1>
-                        <h1 >{type}</h1>
-                        <h1 >{gender}</h1>
-
+                        <img src="\images\abradolflincon.png" alt="Abradolf Lincler" />
                     </div>
                     <div className="homepage-panel homepage-effekt2">  
+                        <img src="\images\meeseeks1.png" alt="Mr. Meeseeks" />
                     </div>
                     <div className="homepage-panel homepage-effekt3">  
+                        <img src="\images\face.png" alt="Armagheadon" />
                     </div>
                     <div className="homepage-panel homepage-effekt4"> 
+                        <img src="\images\birdperson.png" alt="Bird Preson" />
                     </div>
                 </div> 
             
