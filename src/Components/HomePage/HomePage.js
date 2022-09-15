@@ -11,8 +11,14 @@ function HomePage () {
         <div>
 
                 <div className="homepage-main-flex">
-                    <div className="homepage-panel homepage-effekt1"> 
-                        <img className="panel1-img" src="\images\abradolflincon.png" alt="Abradolf Lincler" />
+                    <div className="homepage-panel1 homepage-effekt1"> 
+                        <img className="panel1-img" src="\images\rick-and-morty2.png" alt="Abradolf Lincler" />
+                        <h1 className="panel1-h1"> Check this out!</h1>
+                        <ul className="panel1-ul"> 
+                            <li className="panel1-li">New Season is comming!</li>
+                            <li className="panel1-li">20% discount in the online shop </li>
+                            <li className="panel1-li">Rick and Morty</li>
+                        </ul>
                     </div>
 
                     <div className="homepage-panel2">  
@@ -33,6 +39,7 @@ function HomePage () {
                             <img  className="panel3-img2" src="\images\phenixperson.PNG" alt="Bird Preson" />
                         </div>
                     </div>
+
                     <div class="homepage-panel4">
                         <img  className="panel4-img" src="\images\birdperson.png" alt="Bird Preson" />
                         <div class="overlay4">
