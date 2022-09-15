@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 
 import NavigationNoSerch from "../Navigation/NavigationNoSerch";
 
@@ -6,42 +5,54 @@ import "./HomePage.css"
 
 function HomePage () {
     
-    let [caracters, fetchedCaracters] = useState([])
-
-    let api = `https://rickandmortyapi.com/api/character/25`
- 
- 
-    useEffect(() => {
-     (async function () {
-       let data = await fetch(api).then((res) => res.json()); 
-       fetchedCaracters(data);
-     })(); 
-   }, [api]);
- 
- 
-     
-     let {name, status, species, type, gender, image } = caracters; 
-    
     return(
         <div>
             <NavigationNoSerch />
 
                 <div className="homepage-main-flex">
                     <div className="homepage-panel homepage-effekt1"> 
-                        <img src="\images\abradolflincon.png" alt="Abradolf Lincler" />
+                        <img className="panel1-img" src="\images\abradolflincon.png" alt="Abradolf Lincler" />
                     </div>
                     <div className="homepage-panel homepage-effekt2">  
-                        <img src="\images\meeseeks1.png" alt="Mr. Meeseeks" />
+                        <img className="panel2-img" src="\images\meeseeks1.png" alt="Mr. Meeseeks" />
                     </div>
-                    <div className="homepage-panel homepage-effekt3">  
-                        <img src="\images\face.png" alt="Armagheadon" />
+                    <div class="homepage-panel3">
+                        <h1 className="panel3-h1"> Chat corner</h1>
+                        <img  className="panel3-img" src="\images\birdperson.png" alt="Bird Preson" />
+                        <div class="overlay3">
+                            <h1 className="panel3-h1-2"> Chat corner</h1>
+                            <img  className="panel3-img2" src="\images\phenixperson.PNG" alt="Bird Preson" />
+                        </div>
                     </div>
-                    <div className="homepage-panel homepage-effekt4"> 
-                        <img src="\images\birdperson.png" alt="Bird Preson" />
+                    <div class="homepage-panel4">
+                        <img  className="panel4-img" src="\images\birdperson.png" alt="Bird Preson" />
+                        <div class="overlay4">
+                            <img  className="panel4-img2" src="\images\phenixperson.PNG" alt="Bird Preson" />
+                        </div>
                     </div>
+                
+                    <div class="homepage-panel5">
+                        <h1 className="panel5-h1"> Chat corner</h1>
+                        <img  className="panel5-img" src="\images\birdperson.png" alt="Bird Preson" />
+                        <div class="overlay5">
+                            <div class="overlay5-div">
+                                <h1 className="panel5-h1-2"> Chat corner</h1>
+                            </div>
+                            <img  className="panel5-img2" src="\images\phenixperson.PNG" alt="Bird Preson" />
+                        </div>
+                    </div>
+                    <div class="homepage-panel6">
+                        <img  className="panel6-img" src="\images\birdperson.png" alt="Bird Preson" />
+                        <div class="overlay6">
+                            <img  className="panel6-img2" src="\images\phenixperson.PNG" alt="Bird Preson" />
+                        </div>
+                    </div>
+            
                 </div> 
+                
             
-            
+
+
             <h1>Hello</h1>
         </div>
     )

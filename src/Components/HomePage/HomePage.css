@@ -1,4 +1,11 @@
-
+:root {
+  --purplecolor: #3C1642;
+  --bluecolor: #086375;
+  --lightbluecolor: #1DD3B0;
+  --greencolor: #AFFC41;
+  --lightgreencolor: #B2FF9E; 
+  --graycolor: #d3d3d3;
+}
 
 
 .homepage-main-flex{
@@ -14,28 +21,287 @@
 
 .homepage-panel{
     border: solid black 1px;
-    background-color: antiquewhite;
+    background-color: white;
     width: 40%;
     height: 314px;
+    overflow: hidden;
+    position: relative;
 }
 
-
+/** panel 1 **/
 .homepage-effekt1:hover{
     transform: translate( -18px, -18px);
     box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
 }
 
+.panel1-img {
+ height: 20px;
+}
+
+/** panel 2 **/
 .homepage-effekt2:hover{
     transform: translate( 18px, -18px);
     box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
 }
 
-.homepage-effekt3:hover{
-    transform: translate( -18px, 18px);
-    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+.panel2-img {
+    height: 135%;
+    position: relative;
+    left: 302px;
 }
 
-.homepage-effekt4:hover{
-    transform: translate( 18px, 18px);
-    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+
+/** panel3 **/
+.homepage-panel3 {
+    background-color: #f9f9f9;
+    position: relative;
+    width: 40%;
+    height: 314px;
+    overflow: hidden;
+    border-top: solid 2px var(--lightbluecolor);
+    border-bottom: solid 2px var(--lightbluecolor);
+    border-left: solid 2px var(--lightbluecolor);
+  }
+  
+  .panel3-h1{
+    position: absolute;
+    left: 213px;
+    top: 78px;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-weight: 100;
+    font-size: 50px;
+    transform: rotate(-18deg);
+    text-decoration: underline;
+    color: var(--bluecolor);
+    word-wrap: normal;
+  }
+
+  .panel3-img {
+    display: inline;
+    height: 106%;
+    position: relative;
+    left: 584px;
+  }
+  
+  .overlay3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bluecolor);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .homepage-panel3:hover .overlay3 {
+    width: 100%;
+    left: 0;
+  }
+  
+  .panel3-img2 {
+    height: 171%;
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 761px;
+    top: 235px;
+  }
+
+  .panel3-h1-2{
+    position: absolute;
+    left: 213px;
+    top: 78px;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-weight: 100;
+    font-size: 50px;
+    transform: rotate(-18deg);
+    text-decoration: underline;
+    color: var(--greencolor);
+    word-wrap: normal;
+  }
+
+/** panel 4 **/
+
+.homepage-panel4 {
+    background-color: #f9f9f9;
+    position: relative;
+    width: 40%;
+    height: 314px;
+    overflow: hidden;
+    border-top: solid 2px var(--lightbluecolor);
+    border-bottom: solid 2px var(--lightbluecolor);
+    border-right: solid 2px var(--lightbluecolor);
+  }
+  
+  .panel4-img {
+    display: inline;
+    height: 106%;
+    position: relative;
+    left: -179px;
+  }
+  
+  .overlay4 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #fffcf7;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .homepage-panel4:hover .overlay4 {
+    width: 100%;
+    left: 0;
+  }
+  
+  .panel4-img2 {
+    height: 171%;
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 0px;
+    top: 235px;
+  }
+
+
+  /** panel5 **/
+.homepage-panel5 {
+  background-color: #f9f9f9;
+  position: relative;
+  width: 40%;
+  height: 314px;
+  overflow: hidden;
+  border-top: solid 2px var(--lightbluecolor);
+  border-bottom: solid 2px var(--lightbluecolor);
+  border-left: solid 2px var(--lightbluecolor);
+}
+
+.panel5-h1{
+  position: absolute;
+  left: 213px;
+  top: 78px;
+  font-family: 'Rubik Wet Paint', cursive;
+  font-weight: 100;
+  font-size: 50px;
+  transform: rotate(-18deg);
+  text-decoration: underline;
+  color: var(--bluecolor);
+  word-wrap: normal;
+}
+
+.panel5-img {
+  display: inline;
+  height: 106%;
+  position: relative;
+  left: 584px;
+}
+
+.overlay5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bluecolor);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.overlay5-div{
+  border: solid 1px black;
+  height: 100%;
+  width: 80%;
+  background-color: var(--bluecolor);
+  z-index: 4;
+}
+
+.homepage-panel5:hover .overlay5 {
+  width: 100%;
+  left: 0;
+}
+
+.panel5-img2 {
+  height: 171%;
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 652px;
+  top: -83px;
+  z-index: 5;
+}
+
+.panel5-h1-2{
+  position: absolute;
+  left: 213px;
+  top: 78px;
+  font-family: 'Rubik Wet Paint', cursive;
+  font-weight: 100;
+  font-size: 50px;
+  transform: rotate(-18deg);
+  text-decoration: underline;
+  color: var(--greencolor);
+  word-wrap: normal;
+}
+
+/** panel 6 **/
+
+.homepage-panel6 {
+  background-color: #f9f9f9;
+  position: relative;
+  width: 40%;
+  height: 314px;
+  overflow: hidden;
+  border-top: solid 2px var(--lightbluecolor);
+  border-bottom: solid 2px var(--lightbluecolor);
+  border-right: solid 2px var(--lightbluecolor);
+}
+
+.panel6-img {
+  display: inline;
+  height: 106%;
+  position: relative;
+  left: -179px;
+}
+
+.overlay6 {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #fffcf7;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.homepage-panel6:hover .overlay6 {
+  width: 100%;
+  left: 0;
+}
+
+.panel6-img2 {
+  height: 171%;
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 0px;
+  top: 235px;
 }
