@@ -15,7 +15,7 @@ function HomePage () {
                         <img className="panel1-img" src="\images\abradolflincon.png" alt="Abradolf Lincler" />
                     </div>
 
-                    <div className="homepage-panel2 homepage-effekt2">  
+                    <div className="homepage-panel2">  
                         <h1 className="panel2-h1"> why aren't you registered yet ?</h1>
                         <img className="panel2-img" src="\images\meeseeks1.png" alt="Mr. Meeseeks" />
                         <div class="overlay2">
@@ -37,6 +37,7 @@ function HomePage () {
                         <img  className="panel4-img" src="\images\birdperson.png" alt="Bird Preson" />
                         <div class="overlay4">
                             <img  className="panel4-img2" src="\images\phenixperson.PNG" alt="Bird Preson" />
+                            <img  className="panel4-img3" src="\images\abradolflincon.png" alt="Abradolf" />
                         </div>
                     </div>
                 

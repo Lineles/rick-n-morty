@@ -20,7 +20,7 @@
 }
 
 .homepage-panel{
-    border: solid black 1px;
+    /* border: solid black 1px; */
     background-color: white;
     width: 40%;
     height: 314px;
@@ -39,10 +39,6 @@
 }
 
 /** panel 2 **/
-.homepage-effekt2:hover{
-    transform: translate( 18px, -18px);
-    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
-}
 
 .homepage-panel2 {
   background-color: #f9f9f9;
@@ -50,9 +46,9 @@
   width: 40%;
   height: 314px;
   overflow: hidden;
-  border-top: solid 2px var(--lightbluecolor);
-  border-bottom: solid 2px var(--lightbluecolor);
-  border-left: solid 2px var(--lightbluecolor);
+  /* border-top: solid 2px var(--lightbluecolor); */
+  /* border-bottom: solid 10px var(--graycolor); */
+  /* border-left: solid 2px var(--lightbluecolor); */
 }
 
 .panel2-h1{
@@ -94,15 +90,15 @@
     right: 0;
     background-color: var(--bluecolor);
     overflow: hidden;
-    width: 0;
-    height: 100%;
+    width: 100%;
+    height: 0;
     transition: .5s ease;
     z-index: 2;
   }
   
   .homepage-panel2:hover .overlay2 {
-    width: 100%;
-    left: 0;
+    bottom: 0;
+    height: 100%;
   }
 
   
@@ -227,6 +223,18 @@
     position: relative;
     left: 0px;
     top: 235px;
+  }
+
+  .panel4-img3 {
+    height: 106%;
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translate(-50%, -50%); */
+    position: relative;
+    top: -209px;
+    left: 257px;
+    transform: scaleX(-1);
   }
 
 
