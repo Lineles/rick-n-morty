@@ -1,6 +1,6 @@
 import React from "react";
-import Login from "../Login/Login";
-import NewsPanel from "./NewsPanel";
+import NewsPanel from "./Panels/NewsPanel";
+import LoginPanel from "./Panels/LoginPanel";
 
 import "./HomePage.css"
 
@@ -13,16 +13,8 @@ function HomePage () {
 
                 <div className="homepage-main-flex">
                     <NewsPanel />
-
-                    <div className="homepage-panel2">  
-                        <h1 className="panel2-h1"> why aren't you registered yet ?</h1>
-                        <img className="panel2-img" src="\images\meeseeks1.png" alt="Mr. Meeseeks" />
-                        <div class="overlay2">
-                             <div className="Registration-box">
-                                 <Login />
-                             </div>
-                        </div>
-                    </div>
+                    <LoginPanel />
+                  
 
                     <div class="homepage-panel3">
                         <h1 className="panel3-h1"> Chat corner</h1>
