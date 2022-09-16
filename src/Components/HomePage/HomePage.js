@@ -1,5 +1,6 @@
 import React from "react";
 import Login from "../Login/Login";
+import NewsPanel from "./NewsPanel";
 
 import "./HomePage.css"
 
@@ -11,15 +12,7 @@ function HomePage () {
         <div>
 
                 <div className="homepage-main-flex">
-                    <div className="homepage-panel1 homepage-effekt1"> 
-                        <img className="panel1-img" src="\images\rick-and-morty2.png" alt="Abradolf Lincler" />
-                        <h1 className="panel1-h1"> Check this out!</h1>
-                        <ul className="panel1-ul"> 
-                            <li className="panel1-li">New Season is comming!</li>
-                            <li className="panel1-li">20% discount in the online shop </li>
-                            <li className="panel1-li">Rick and Morty</li>
-                        </ul>
-                    </div>
+                    <NewsPanel />
 
                     <div className="homepage-panel2">  
                         <h1 className="panel2-h1"> why aren't you registered yet ?</h1>
