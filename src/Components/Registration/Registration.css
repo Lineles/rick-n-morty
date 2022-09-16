@@ -17,6 +17,8 @@
     background-color: var(--bluecolor);
     border-radius: 42px;
     border: solid 2px var(--graycolor);
+    width: 558px;
+    margin-top: 40px;
 }
 
 .reg-input{
