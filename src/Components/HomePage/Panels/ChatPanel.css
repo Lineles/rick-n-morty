@@ -134,36 +134,6 @@
     z-index: 1
   }
 
-  /* .ChatPanel-ul-overlay{
-    width: 272px;
-    height: 181px;
-    border: solid 4px var(--lightbluecolor);
-    position: relative;
-    top: -249px;
-    left: 121px;
-    padding: 0px;
-    background-color: var(--lightbluecolor);
-    border-radius: 14px;
-    z-index: 1;
-  } */
-
-  
-  /* .ChatPanel-li-overlay{
-    font-family: 'Rubik Wet Paint', cursive;
-    font-size: 25px;
-    list-style-type: none;
-    word-break: break-word;
-    padding: 4px;
-    width: 258px;
-    position: relative;
-    left: -4px;
-    top: 7px;
-    font-weight: 100;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px var(--greencolor);
-    text-align: center;
-  } */
-
   .ChatPanel-p-overlay{
     font-family: 'Rubik Wet Paint', cursive;
     font-size: 20px;
