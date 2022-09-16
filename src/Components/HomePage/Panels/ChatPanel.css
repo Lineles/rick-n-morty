@@ -1,0 +1,180 @@
+:root {
+    --purplecolor: #3C1642;
+    --bluecolor: #086375;
+    --lightbluecolor: #1DD3B0;
+    --greencolor: #AFFC41;
+    --lightgreencolor: #B2FF9E; 
+    --graycolor: #d3d3d3;
+  }
+
+  /** panel3 **/
+ 
+
+.homepage-ChatPanel {
+    background-color: #f9f9f9;
+    position: relative;
+    width: 40%;
+    height: 314px;
+    overflow: hidden;
+    border-top: solid 2px var(--lightbluecolor);
+    border-bottom: solid 2px var(--lightbluecolor);
+    border-left: solid 2px var(--lightbluecolor);
+  }
+  
+  .ChatPanel-h1{
+    position: absolute;
+    left: 67px;
+    top: -29px;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-weight: 100;
+    font-size: 64px;
+    transform: rotate(0deg);
+    text-decoration: underline;
+    color: var(--bluecolor);
+    /* word-wrap: normal; */
+    z-index: 1;
+  }
+
+  .ChatPanel-img {
+    display: inline;
+    height: 158%;
+    position: relative;
+    left: 546px;
+    top: 48px;
+    transform: scaleX(-1);
+  }
+
+  .ChatPanel-img-2{
+    width: 451px;
+    position: relative;
+    top: -145px;
+    left: -152px;
+    z-index: 2;
+  }
+  
+  .ChatPanel-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .homepage-ChatPanel:hover .ChatPanel-overlay {
+    width: 100%;
+    left: 0;
+  }
+  
+  .ChatPanel-ul{
+    width: 272px;
+    height: 181px;
+    border: solid black 4px;
+    position: relative;
+    top: -397px;
+    left: 121px;
+    padding: 0px;
+    background-color: black;
+    border-radius: 14px;
+    z-index: 1;
+  }
+  
+  .ChatPanel-li{
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 41px;
+    list-style-type: none;
+    word-break: break-word;
+    padding: 4px;
+    width: 258px;
+    position: relative;
+    left: -4px;
+    top: 7px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: red;
+    /* text-shadow: 2px 2px var(--greencolor); */
+    text-align: center;
+  }
+
+  /** Overlay **/
+
+  .ChatPanel-h1-overlay{
+    position: absolute;
+    left: 26px;
+    width: 615px;
+    height: 85px;
+    top: -29px;
+    font-family: 'Rubik Bubbles', cursive;
+    font-weight: 100;
+    font-size: 60px;
+    transform: rotate(0deg);
+    color: #b7006edb;
+    text-shadow: -6px -2px lightcoral;
+    z-index: 1;
+  }
+
+  .ChatPanel-img-overlay {
+    height: 111%;
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 652px;
+    top: 159px;
+  }
+
+  .ChatPanel-img-2-overlay{
+    position: relative;
+    height: 282px;
+    top: -441px;
+    left: 130px;
+    z-index: 1
+  }
+
+  /* .ChatPanel-ul-overlay{
+    width: 272px;
+    height: 181px;
+    border: solid 4px var(--lightbluecolor);
+    position: relative;
+    top: -249px;
+    left: 121px;
+    padding: 0px;
+    background-color: var(--lightbluecolor);
+    border-radius: 14px;
+    z-index: 1;
+  } */
+
+  
+  /* .ChatPanel-li-overlay{
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 25px;
+    list-style-type: none;
+    word-break: break-word;
+    padding: 4px;
+    width: 258px;
+    position: relative;
+    left: -4px;
+    top: 7px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px var(--greencolor);
+    text-align: center;
+  } */
+
+  .ChatPanel-p-overlay{
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 20px;
+    word-break: break-word;
+    padding: 4px;
+    width: 123px;
+    height: 127px;
+    position: relative;
+    left: 139px;
+    top: -222px;
+    font-weight: 100;
+    text-shadow: 2px 2px var(--greencolor);
+    z-index: 2;
+  }

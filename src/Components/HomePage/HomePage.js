@@ -1,6 +1,8 @@
 import React from "react";
 import NewsPanel from "./Panels/NewsPanel";
 import LoginPanel from "./Panels/LoginPanel";
+import CaractersPanel from "./Panels/CaractersPanel";
+import ChatPanel from "./Panels/ChatPanel";
 
 import "./HomePage.css"
 
@@ -14,16 +16,10 @@ function HomePage () {
                 <div className="homepage-main-flex">
                     <NewsPanel />
                     <LoginPanel />
-                  
+                    <ChatPanel /> 
+                    <CaractersPanel />
 
-                    <div class="homepage-panel3">
-                        <h1 className="panel3-h1"> Chat corner</h1>
-                        <img  className="panel3-img" src="\images\birdperson.png" alt="Bird Preson" />
-                        <div class="overlay3">
-                            <h1 className="panel3-h1-2"> Chat corner</h1>
-                            <img  className="panel3-img2" src="\images\phenixperson.PNG" alt="Bird Preson" />
-                        </div>
-                    </div>
+               
 
                     <div class="homepage-panel4">
                         <img  className="panel4-img" src="\images\birdperson.png" alt="Bird Preson" />
