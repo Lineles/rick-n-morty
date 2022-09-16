@@ -10,15 +10,37 @@
 
   /** panel 4 **/
 
+
+.CaractersPanel-Fetch{
+  background-color: #1DD3B0;
+  height: 243px;
+  position: relative;
+  width: 751px;
+  overflow: scroll;
+  overflow-x: hidden;
+  border: solid 5px black;
+  border-top: none;
+}  
+
 .homepage-CaractersPanel {
   background-color: #f9f9f9;
   position: relative;
   width: 40%;
   height: 314px;
-  overflow: hidden;
   border-top: solid 2px var(--lightbluecolor);
   border-bottom: solid 2px var(--lightbluecolor);
   border-right: solid 2px var(--lightbluecolor);
+}
+
+.CaractersPanel-overlay-h1{
+  background-color: var(--bluecolor);
+  margin-bottom: 0px;
+  text-align: center;
+  padding: 8px;
+  border: solid 4px black;
+  color: var(--lightgreencolor);
+  text-shadow: -4px -2px var(--purplecolor);
+  margin-top: 0px;
 }
 
 .CaractersPanel-img {
@@ -26,6 +48,43 @@
   height: 106%;
   position: relative;
   left: -179px;
+}
+
+.CaractersPanel-Caracter-div{
+  background-color: var(--bluecolor);
+  word-break: break-all;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  padding-left: 18px;
+  margin-top: 5px;
+}
+
+.CaractersPanel-Caracter-name{
+  font-family: 'Rubik Wet Paint', cursive;
+  display: inline-block;
+  margin: 2px;
+  margin-left: 20px;
+  color: var(--greencolor);
+  font-weight: 100;
+  text-shadow: 2px 2px black;
+}
+
+.CaractersPanel-Caracter-img{
+  background-color: var(--graycolor);
+  width: 108px;
+  border-left: solid 5px var(--lightbluecolor);
+  border-right: solid 5px var(--lightbluecolor);
+}
+
+
+/** Overlay **/
+.homepage-CaractersPanel:hover .CaractersPanel-overlay {
+  width: 100%;
+  left: 0;
 }
 
 .CaractersPanel-overlay {
@@ -38,11 +97,6 @@
   width: 0;
   height: 100%;
   transition: .5s ease;
-}
-
-.homepage-CaractersPanel:hover .CaractersPanel-overlay {
-  width: 100%;
-  left: 0;
 }
 
 .CaractersPanel-overlay-img1 {
