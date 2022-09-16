@@ -7,7 +7,7 @@
     --graycolor: #d3d3d3;
 }
 
-.form-flex{
+.login-form-flex{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +19,7 @@
     border: solid 2px var(--graycolor);
 }
 
-.SignUp-div{
+.login-SignUp-div{
     width: 416px;
     background-color: var(--lightbluecolor);
     border: solid 2px var(--bluecolor);
@@ -27,7 +27,7 @@
     border-radius: 40px 40px 0 0;
 }
 
-.reg-input{
+.login-input{
     text-align: center;
     margin: 0 4px;
     width: 166px;
@@ -37,7 +37,7 @@
     font-size: 18px;
 }
 
-.reg-input-label{
+.login-input-label{
     text-align: center;
     padding: 5px 10px;
     text-decoration: none;
@@ -46,14 +46,14 @@
     font-family: 'Rubik Wet Paint', cursive;
 }
 
-.form-div-flex{
+.login-form-div-flex{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.form-input-box{
+.login-form-input-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,7 +63,7 @@
 }
 
 
-.SignUp-h1{
+.login-SignUp-h1{
     display: flex;
     font-family: 'Rubik Wet Paint', cursive;
     font-weight: 200;
@@ -71,7 +71,7 @@
     margin: 8px;
 }
 
-.form-buttons{
+.login-form-buttons{
     padding: 14px; 
     background-color: var(--lightgreencolor);
     width: 388px;
@@ -80,7 +80,7 @@
     justify-content: center;
 }
 
-.R-button{
+.login-R-button{
     margin-top: 14px;
     margin-right: 20px;
     width: 90px;
@@ -91,7 +91,7 @@
     font-family: 'Rubik Wet Paint', cursive;
 }
 
-.S-button{
+.login-S-button{
     margin-top: 14px;
     margin-left: 20px;
     width: 90px;
@@ -102,11 +102,11 @@
     font-family: 'Rubik Wet Paint', cursive;
 }
 
-.S-button:hover{
+.login-S-button:hover{
     background-color: var(--lightbluecolor);
 }
 
-.R-button:hover{
+.login-R-button:hover{
     background-color: darkmagenta;
     color: aliceblue;
 }

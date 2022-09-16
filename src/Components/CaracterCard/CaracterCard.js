@@ -26,7 +26,7 @@ function CaracterCard ({results, currentPage, setpage, page, setSearch}) {
             display = "No Caracter";
         };
         return (
-         <div>  
+         <div className="Main-element-structure">  
             <Search setpage={setpage} setSearch={setSearch}/> 
             <div className="main-flex" > {display}</div>
             <Pages setpage={setpage} currentPage={currentPage} />

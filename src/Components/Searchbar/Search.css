@@ -20,6 +20,7 @@
       color: var(--purplecolor);
       text-align: center;
       animation: effekt3-out 500ms forwards;
+      margin-top: 42px;
   }  
 
   .effekt3:hover {
