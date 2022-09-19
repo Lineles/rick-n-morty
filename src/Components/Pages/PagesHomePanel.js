@@ -1,6 +1,7 @@
+import Search from "../Searchbar/Search";
 import "./PagesHomePanel.css"
 
-function PagesHomePanel ({setpage, currentPage}) {
+function PagesHomePanel ({setpage, currentPage, setSearch}) {
 
     let next = () => {
         if(currentPage === 42) return;
@@ -18,7 +19,7 @@ return(
     <div className="CaracterPanel-overlay-Pages" >
 
         <button onClick={last} className="HomePanel-page-button" >last</button>
-        <h3 className="CaracterPanel-overlay-Pages-Title">!!! More than 800 Caracters !!!</h3>
+            <Search />
         <button onClick={next} className="HomePanel-page-button" >next</button>
     </div>
 )

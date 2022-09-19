@@ -3,7 +3,7 @@ import PagesHomePanel from "../../Pages/PagesHomePanel";
 
 import "./CaractersPanel.css"
 
-function CaractersPanel ({results, currentPage, setpage}) {
+function CaractersPanel ({results, currentPage, setpage, setSearch}) {
 
 let display;
 
@@ -28,9 +28,9 @@ if (results) {
 return(
 
         <div class="homepage-CaractersPanel">
-            {/* <img  className="CaractersPanel-img" src="\images\birdperson.png" alt="Bird Preson" /> */}
+            <h3 className="CaracterPanel-overlay-Pages-Title">!!! More than 800 Caracters !!!</h3>
             <div class="CaractersPanel-overlay">
-                <PagesHomePanel setpage={setpage} currentPage={currentPage}/>
+                <PagesHomePanel setpage={setpage} currentPage={currentPage} setSearch={setSearch}/>
                 <div className="CaractersPanel-Fetch" > {display}</div>   
             </div>
         </div>

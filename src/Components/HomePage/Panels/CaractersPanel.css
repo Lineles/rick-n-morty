@@ -22,6 +22,16 @@
   border-top: none;
 }  
 
+.CaracterPanel-overlay-Pages-Title{
+  font-family: 'Rubik Wet Paint', cursive;
+  margin: 0 10px;
+  padding: 8px 13px;
+  font-size: 32px;
+  font-weight: 100;
+  color: var(--greencolor);
+  text-shadow: 2px 2px black;
+}
+
 .homepage-CaractersPanel {
   background-color: #f9f9f9;
   position: relative;
