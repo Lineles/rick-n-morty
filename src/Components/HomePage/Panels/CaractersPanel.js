@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 
-import Pages from "../../Pages/Pages";
 import "./CaractersPanel.css"
 
-function CaractersPanel ({results,currentPage, setpage}) {
+function CaractersPanel ({results}) {
 
 let display;
 

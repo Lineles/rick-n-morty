@@ -11,7 +11,7 @@ function Header (){
              <div className="header-text" >
                  <h3 className="header-h3"> The </h3>
                  <h1 className="header-h1"> Rick and Morty </h1>
-                 <h3 className="header-h3-2"> Character Encyclopaedia</h3>
+                 <h3 className="header-h3-2"> Character Encyclopedia</h3>
              </div>
 
              <div>
