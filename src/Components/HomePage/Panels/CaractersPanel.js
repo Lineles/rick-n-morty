@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import PagesHomePanel from "../../Pages/PagesHomePanel";
 
 import "./CaractersPanel.css"
 
-function CaractersPanel ({results}) {
+function CaractersPanel ({results, currentPage, setpage}) {
 
 let display;
 
@@ -29,7 +30,7 @@ return(
         <div class="homepage-CaractersPanel">
             {/* <img  className="CaractersPanel-img" src="\images\birdperson.png" alt="Bird Preson" /> */}
             <div class="CaractersPanel-overlay">
-                <h1 className="CaractersPanel-overlay-h1"> Find your favourite Caracter</h1>
+                <PagesHomePanel setpage={setpage} currentPage={currentPage}/>
                 <div className="CaractersPanel-Fetch" > {display}</div>   
             </div>
         </div>
