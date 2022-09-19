@@ -6,7 +6,7 @@ import ChatPanel from "./Panels/ChatPanel";
 
 import "./HomePage.css"
 
-function HomePage ({results, currentPage, setpage, page}) {
+function HomePage ({results, currentPage, setpage}) {
  
 
 
@@ -17,7 +17,7 @@ function HomePage ({results, currentPage, setpage, page}) {
                     <NewsPanel />
                     <LoginPanel />
                     <ChatPanel /> 
-                    <CaractersPanel results={results} setpage={setpage} page={page} currentPage={currentPage}/>
+                    <CaractersPanel results={results} setpage={setpage} currentPage={currentPage}/>
 
 
                 </div> 
