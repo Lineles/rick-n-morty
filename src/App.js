@@ -11,6 +11,8 @@ import { Footer } from "./Components/Footer/Footer";
 
 import Header from './Components/Header/Header';
 import './App.css';
+import NewsPage from "./Components/NewsPage/NewsPage";
+import Discord from "./Components/Discord/Discord";
 
 function App() {
 
@@ -39,6 +41,8 @@ function App() {
           <Route path="/:id" element={<CaracterPage  results={results} />}/>
           <Route path="/registration" element={<Registration /> }/>
           <Route path="/yourCaracter" element={<YourCaracter />} /> 
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/Discord" element={<Discord /> }/> 
         </Routes>   
       <Footer />       
     </Router>  

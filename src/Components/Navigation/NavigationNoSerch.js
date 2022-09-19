@@ -2,14 +2,16 @@ import "./Navigation.css"
 import { Link } from "react-router-dom";
 import error from "../404";
 
-function NavigationNoSerch ({setpage, setSearch}) {
+function NavigationNoSerch () {
 
         return (
 
             <nav> 
                 <div>
+                    <Link to="/news" className="nav-link">News</Link>
                     <Link to="/" className="nav-link">Home Page</Link>
                     <Link to="/Caracters" className="nav-link">Caracters</Link>
+                    <Link to="/Discord" className="nav-link">Discord</Link>
                     <Link to="/registration"  className="nav-link">Create Acc</Link>
                 </div>
 

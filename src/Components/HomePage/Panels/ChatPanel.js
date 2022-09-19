@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 import "./ChatPanel.css"
 
 function ChatPanel () {
 
     return (
 
-        <div class="homepage-ChatPanel">
+        <Link
+            to={"/Discord"}
+            class="homepage-ChatPanel">
             <img  className="ChatPanel-img" src="\images\vascular-venture-fantendo.png" alt="Summer" />
             <img  className="ChatPanel-img-2" src="\images\a8103e67a904.png" alt="TV" />
                 <ul className="ChatPanel-ul"> 
@@ -18,7 +21,7 @@ function ChatPanel () {
                 <img className="ChatPanel-img-2-overlay" src="\images\rick-and-morty-png-transparent-png.png" alt="Summer" />
                 
             </div>
-        </div>
+        </Link>
 
 
     );
