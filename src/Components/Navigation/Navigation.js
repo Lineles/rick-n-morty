@@ -10,8 +10,8 @@ function Navigation ({setpage, setSearch}) {
 
             <nav> 
                 <div>
-                    <Link to="/homepage" className="nav-link">Home Page</Link>
-                    <Link to="/" className="nav-link">Caracters</Link>
+                    <Link to="/" className="nav-link">Home Page</Link>
+                    <Link to="/Caracters" className="nav-link">Caracters</Link>
                     <Link to="/registration"  className="nav-link">Create Acc</Link>
                 </div>
 

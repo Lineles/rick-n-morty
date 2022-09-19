@@ -35,11 +35,7 @@ function App() {
       <NavigationNoSerch />
         <Routes> 
           <Route path="/" element={<HomePage page="/" results={results} setpage={setpage} setSearch={setSearch} currentPage={page}/> } /> 
-          <Route path="/homepage" element={<CaracterCard page="/homepage" results={results} setpage={setpage} setSearch={setSearch} currentPage={page} />}/>
-
-          {/* <Route path="/homepage" element={<HomePage results={results}/> } /> 
-          <Route path="/" element={<CaracterCard page="/" results={results} setpage={setpage} setSearch={setSearch} currentPage={page} />}/> */}
-          
+          <Route path="/Caracters" element={<CaracterCard page="/" results={results} setpage={setpage} setSearch={setSearch} currentPage={page} />}/>
           <Route path="/:id" element={<CaracterPage  results={results} />}/>
           <Route path="/registration" element={<Registration /> }/>
           <Route path="/yourCaracter" element={<YourCaracter />} /> 

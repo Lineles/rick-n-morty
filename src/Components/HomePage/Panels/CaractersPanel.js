@@ -30,7 +30,6 @@ return(
             <div class="CaractersPanel-overlay">
                 <h1 className="CaractersPanel-overlay-h1"> Find your favourite Caracter</h1>
                 <div className="CaractersPanel-Fetch" > {display}</div>   
-                {/* <img  className="CaractersPanel-overlay-img1" src="\images\phenixperson.PNG" alt="Bird Preson" /> */}
             </div>
         </div>
 
