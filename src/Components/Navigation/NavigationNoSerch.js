@@ -8,15 +8,14 @@ function NavigationNoSerch ({setpage, setSearch}) {
 
             <nav> 
                 <div>
-                    <Link to={error} className="nav-link">Rick Tak Toe</Link>
-                    <Link to={error} className="nav-link">Rick Paper Scissors</Link>
-                    <Link to={error} className="nav-link">Which Character are you?</Link>
+                    <Link to="/" className="nav-link">Home Page</Link>
+                    <Link to="/Caracters" className="nav-link">Caracters</Link>
+                    <Link to="/registration"  className="nav-link">Create Acc</Link>
                 </div>
 
                 
                 <div>
                     <form>
-                        <Link to="/registration"  className="nav-link">Create Acc</Link>
                         <Link to={error} className="nav-link">Login</Link>
                         <input type="text" placeholder="Rick Sanchez"  className="nav-input"/> 
                         <input type="password" placeholder="Password" className="nav-input"/> 

@@ -7,6 +7,13 @@
     --graycolor: #d3d3d3;
   }
 
+.Main-element-structure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .main-flex{
     display: flex;

@@ -1,6 +1,5 @@
 import "./CaracterPage.css";
 import React from "react";
-import NavigationNoSerch from "../Navigation/NavigationNoSerch";
 
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -28,7 +27,6 @@ function CaracterPage () {
     return (
 
     <div>
-      <NavigationNoSerch />
       <div className="buttonDiv">
         <button className="name-h1 effekt5" onClick={showIMG} >{name}</button>
       </div>
