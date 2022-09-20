@@ -19,7 +19,7 @@ return(
     <div className="CaracterPanel-overlay-Pages" >
 
         <button onClick={last} className="HomePanel-page-button" >last</button>
-            <Search />
+            <Search  setpage={setpage} setSearch={setSearch}/>
         <button onClick={next} className="HomePanel-page-button" >next</button>
     </div>
 )
