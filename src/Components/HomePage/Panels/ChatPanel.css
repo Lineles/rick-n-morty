@@ -17,9 +17,6 @@
     height: 314px;
     overflow: hidden;
     text-decoration: none;
-    border-top: solid 2px var(--lightbluecolor);
-    border-bottom: solid 2px var(--lightbluecolor);
-    border-left: solid 2px var(--lightbluecolor);
   }
   
   .ChatPanel-h1{
