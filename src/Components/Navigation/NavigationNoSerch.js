@@ -7,7 +7,7 @@ function NavigationNoSerch () {
         return (
 
             <nav> 
-                <div>
+                <div className="nav-link-div">
                     <Link to="/news" className="nav-link">News</Link>
                     <Link to="/" className="nav-link">Home Page</Link>
                     <Link to="/Caracters" className="nav-link">Caracters</Link>
@@ -17,7 +17,7 @@ function NavigationNoSerch () {
 
                 
                 <div>
-                    <form>
+                    <form className="nav-login-form">
                         <Link to={error} className="nav-link">Login</Link>
                         <input type="text" placeholder="Rick Sanchez"  className="nav-input"/> 
                         <input type="password" placeholder="Password" className="nav-input"/> 

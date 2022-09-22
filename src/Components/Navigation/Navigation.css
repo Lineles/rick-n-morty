@@ -54,3 +54,40 @@ nav{
     border-left: solid 2px var(--bluecolor);
     border-bottom: solid 2px var(--greencolor);
 }
+
+/***/
+/* Phone */
+/***/
+@media  (max-width: 500px) { 
+
+  nav {
+    background-color: var(--graycolor);
+    height: 50px;
+    border-bottom: solid 2px darkgray;
+    border-top: solid 2px darkgray;
+}
+
+.nav-link-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-login-form{
+  display: none;
+}
+
+.nav-link {
+  text-align: center;
+  padding: 2px 3px;
+  text-decoration: none;
+  color: black;
+  margin-right: 7px;
+  font-family: 'Rubik Wet Paint', cursive;
+  border-left: solid 1px darkgray;
+  font-weight: 100;
+}
+
+}; 

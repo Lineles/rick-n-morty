@@ -63,3 +63,53 @@
   color: var(--purplecolor);
   text-shadow: 2px 2px var(--greencolor);
 }
+
+
+/***/
+/* Phone */
+/***/
+@media  (max-width: 550px) { 
+
+  .NewsPanel {
+    background-color: var(--bluecolor);
+    width: 100%;
+    height: 314px;
+    overflow: hidden;
+}
+
+.NewsPanel-img {
+  height: 311px;
+  position: relative;
+  left: -67px;
+  top: 44px;
+}
+
+.NewsPanel-h1 {
+  font-family: 'Rubik Wet Paint', cursive;
+  font-size: 41px;
+  font-weight: 400;
+  position: relative;
+  top: -292px;
+  left: 44px;
+  display: inline-block;
+  margin: 0px;
+  transform: rotate(0deg);
+  color: #a10a34;
+  text-shadow: -5px -3px black;
+}
+
+.NewsPanel-ul {
+  display: inline-block;
+  position: relative;
+  top: -296px;
+  left: 192px;
+  border: solid 2px black;
+  border-radius: 21px;
+  padding: 14px;
+  width: 172px;
+  height: 178px;
+  background-color: var(--graycolor);
+  overflow: hidden;
+}
+
+}
