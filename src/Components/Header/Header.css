@@ -69,3 +69,63 @@
     justify-content: center;
     align-items: center;
 }
+
+
+/***/
+/* Phone */
+/***/
+@media  (max-width: 550px) { 
+
+    .header-div {
+        height: 93px;
+        display: flex;
+        padding-top: 33px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--lightgreencolor);
+    }
+
+    .header-img-left{
+        display: none;
+    }
+    
+    .header-img-right{
+        display: none;
+    }
+    
+    .header-h1 {
+        font-family: 'Rubik Moonrocks', cursive;
+        font-size: 43px;
+        margin: 0px;
+        position: relative;
+        top: -24px;
+    }
+    
+    .header-h3 {
+        font-family: 'Rubik Distressed', cursive;
+        font-size: 30px;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        left: -161px;
+        top: -5px;
+        transform: rotate(-17deg);
+        font-weight: 100;
+        color: var(--lightbluecolor);
+        text-shadow: 0 0 var(--purplecolor);
+    }
+    
+    .header-h3-2 {
+        font-family: 'Rubik Wet Paint', cursive;
+        font-size: 24px;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        top: -42px;
+        font-weight: 100;
+        color: darkmagenta;
+        text-shadow: 0 0 var(--bluecolor);
+    }
+
+
+};
