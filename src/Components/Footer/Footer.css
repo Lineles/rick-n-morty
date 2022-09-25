@@ -39,3 +39,25 @@
     color: var(--graycolor);
     margin: 4px;
 }
+
+/***/
+/* Phone */
+/***/
+@media  (max-width: 550px) { 
+
+
+    .footer-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: var(--bluecolor);
+        border-top: 10px solid var(--lightbluecolor);
+        border-bottom: 10px solid var(--lightbluecolor);
+        padding-bottom: 54px;
+        padding: 40px;
+    }
+
+
+
+}
