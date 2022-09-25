@@ -112,3 +112,58 @@
     background-color: darkmagenta;
     color: aliceblue;
 }
+
+
+/***/
+/* Phone */
+/***/
+@media  (max-width: 550px) { 
+
+
+    .form-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background-color: var(--bluecolor);
+        border: solid 2px var(--graycolor);
+        width: auto;
+        border-radius: 0px;
+    }
+
+.form-div-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.SignUp-div {
+    width: 252px;
+    background-color: var(--lightbluecolor);
+    border: solid 2px var(--bluecolor);
+    border-bottom: solid 5px var(--bluecolor);
+    border-radius: 40px 40px 0 0;
+}
+
+.form-buttons {
+    padding: 14px;
+    background-color: var(--lightgreencolor);
+    width: 224px;
+    height: 60px;
+    border-radius: 0 0 40px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    background-color: var(--lightgreencolor);
+}
+
+}
