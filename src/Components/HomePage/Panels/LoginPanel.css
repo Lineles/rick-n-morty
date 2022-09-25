@@ -93,7 +93,7 @@
   font-weight: 100;
   font-family: 'Rubik Wet Paint', cursive;
   height: 147px;
-  width: auto;
+  width: 80%;
   overflow-wrap: break-word;
   transform: rotate(-0deg);
   color: black;
@@ -107,11 +107,6 @@
   left: 79px;
   top: 93px;
 }
-
-
-
-
-
 
 
 }
