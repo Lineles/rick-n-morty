@@ -67,7 +67,6 @@
 .papier{
     width: 708px;
     z-index: -1;
-    
     transform: rotate(103deg);
 }
 
@@ -148,3 +147,82 @@
     75%  { background: var(--lightbluecolor)}
     100% { background: var(--lightgreencolor)}
   }  
+
+/***/
+/* Phone */
+/***/
+@media  (max-width: 550px) { 
+
+
+  .name-h1 {
+    border: solid 2px var(--bluecolor);
+    display: inline-block;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 40px;
+    padding: 18px 77px;
+    font-weight: 300;
+    border-radius: 28px;
+    background-color: var(--lightgreencolor);
+    margin-top: 26px;
+    margin-bottom: 0px;
+}
+
+.MainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    padding-top: 0px;
+    /* margin-bottom: 200px; */
+}
+
+.imageDIV {
+    font-family: 'Rubik Wet Paint', cursive;
+    /* font-size: 30px; */
+    /* border: solid black 1px; */
+    padding: 16px;
+    padding-bottom: 64px;
+    background-color: var(--graycolor);
+    border-radius: 4px;
+    position: relative;
+    transform: rotate(-0deg);
+    left: 0px;
+    top: 20px;
+    /* z-index: 8; */
+}
+
+
+.infocard {
+    position: relative;
+    top: -4px;
+    left: 0px;
+    z-index: 9;
+}
+
+.info {
+    width: 90%;
+    height: auto;
+    text-align: start;
+    /* border: solid black 1px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top: 41px;
+    left: 0px;
+    background-color: var(--lightgreencolor);
+    transform: rotate(0deg);
+}
+
+.papier {
+    width: 708px;
+    z-index: -1;
+    visibility: hidden;
+    transform: rotate(103deg);
+}
+
+
+
+}

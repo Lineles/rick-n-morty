@@ -1,6 +1,6 @@
 import "./LoginPanel.css"
 import Login from "../../Login/Login";
-// import Registration from "../../Registration/Registration";
+
 
 function LoginPanel () {
 
@@ -13,7 +13,7 @@ function LoginPanel () {
             <div class="login-panel-overlay">
                 <div className="login-panel-box">
                     <Login />
-                    {/* <Registration /> */}
+                    
                 </div>
         </div>
     </div>

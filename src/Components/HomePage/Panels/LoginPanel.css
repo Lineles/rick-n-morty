@@ -15,9 +15,6 @@
     width: 40%;
     height: 314px;
     overflow: hidden;
-    /* border-top: solid 2px var(--lightbluecolor); */
-    /* border-bottom: solid 10px var(--graycolor); */
-    /* border-left: solid 2px var(--lightbluecolor); */
   }
   
   .login-panel-h1{
@@ -69,3 +66,47 @@
       bottom: 0;
       height: 100%;
     }
+
+/***/
+/* Phone */
+/***/
+@media  (max-width: 550px) { 
+
+
+  .homepage-login-panel {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 314px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.login-panel-h1 {
+  top: 0px;
+  font-size: 37px;
+  left: 0px;
+  z-index: 1;
+  font-weight: 100;
+  font-family: 'Rubik Wet Paint', cursive;
+  height: 147px;
+  width: 80%;
+  overflow-wrap: break-word;
+  transform: rotate(-0deg);
+  color: black;
+  text-shadow: 11px 11px var(--lightbluecolor);
+}
+
+
+.login-panel-img {
+  height: 135%;
+  position: relative;
+  left: 79px;
+  top: 93px;
+}
+
+
+}
